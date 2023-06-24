@@ -6,11 +6,16 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "firebase": "^9.22.2",
+    "framer-motion": "^10.12.17",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-firebase-hooks": "^5.1.1"
+    "react-firebase-hooks": "^5.1.1",
+    "react-transition-group": "^4.4.5"
   },
   "devDependencies": {
     "@types/node": "20.3.1",

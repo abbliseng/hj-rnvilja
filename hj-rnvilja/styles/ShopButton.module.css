@@ -1,0 +1,35 @@
+.shopButton {
+    background-color: #ED0C6E;
+  
+    width: clamp(30%, 650px, 90%);
+
+    align-self: flex-end;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+  
+    cursor: pointer;
+  }
+  
+  .shopButton h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #E7E4CE;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .shopButton span {
+    color: #E7E4CE;
+    font-size: 1.25rem;
+    font-style: italic;
+    margin-bottom: 10px;
+    text-align: center;
+    max-width: 50%;
+    padding-bottom: 10px;
+  }
