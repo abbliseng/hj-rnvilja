@@ -16,9 +16,6 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className='overlay'>
-          <ShopButton />
-        </div>
         <div className={styles.container}>
           <BusinessSection />
           {/* <div className={styles.businessSection}>
@@ -28,6 +25,9 @@ export default function Home() {
             <Center />
           </div>
           <SportsSection />
+        </div>
+        <div className='overlay'>
+          <ShopButton />
         </div>
       </main>
     </div>
