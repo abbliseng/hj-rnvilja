@@ -15,6 +15,7 @@
   
     cursor: pointer;
 
+    box-shadow: 0px 0 30px var(--shadow2);
     pointer-events: all;
   }
   

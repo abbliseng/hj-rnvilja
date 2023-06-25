@@ -1,6 +1,5 @@
 * {
   /* outline: 1px solid red; */
-  overflow: hidden;
 }
 
 :root {
@@ -8,8 +7,12 @@
   --shadow: #d6d1ac;
   --shadow2: #C5BE8A;
   --orange: #E18727;
+  --idrott: #E18727;
   --blue: #00AACF;
+  --foretag: #00AACF;
   --cyan: #ED0C6E;
+  --shop: #ED0C6E;
+  --superfriend: #ED0C6E;
 }
 
 html,
@@ -17,8 +20,9 @@ body {
   background-color: var(--bg);
   padding: 0;
   margin: 0;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+    font-family: -apple-system, Helvetica, sans-serif;
 }
 
 a {
@@ -28,6 +32,8 @@ a {
 
 * {
   box-sizing: border-box;
+  user-select: none; /* Disable text selection */
+  overflow: hidden;
 }
 
 img {
@@ -68,6 +74,37 @@ button {
   align-items: center;
   
   pointer-events:none;
+}
+
+.toolbar {
+  z-index: 1;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+
+  height: 60px;
+  
+  display: flex;
+  flex-direction: row;
+  /* justify-content: end; */
+  align-items: center;
+
+  pointer-events:none;
+}
+
+.toolbar-btn {
+  width: 50px;
+  height: 50px;
+
+  margin: 5px;
+  border-radius: 10px;
+
+  color: var(--bg);
+  /* background-color: var(--orange); */
+
+  pointer-events: all;
 }
 
 .spacer {
