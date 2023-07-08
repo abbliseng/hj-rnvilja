@@ -6,11 +6,8 @@
   --bg: #E7E4CE;
   --shadow: #d6d1ac;
   --shadow2: #C5BE8A;
-  --orange: #E18727;
   --idrott: #E18727;
-  --blue: #00AACF;
   --foretag: #00AACF;
-  --cyan: #ED0C6E;
   --shop: #ED0C6E;
   --superfriend: #ED0C6E;
 }
@@ -20,9 +17,9 @@ body {
   background-color: var(--bg);
   padding: 0;
   margin: 0;
-  /* font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
-    font-family: -apple-system, Helvetica, sans-serif;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    /* font-family: -apple-system, Helvetica, sans-serif; */
 }
 
 a {

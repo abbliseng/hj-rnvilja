@@ -56,7 +56,7 @@ function SportsSection() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac tincidunt augue. Praesent vehicula magna sed ante molestie, quis elementum erat malesuada. Vivamus eu aliquam felis. Phasellus nec turpis condimentum.
         </>
     )
-    return Section("#E18727", faVolleyball, content, "75%", "/idrott")
+    return Section("var(--idrott)", faVolleyball, content, "75%", "/idrott")
 }
 
 function BusinessSection() {
@@ -72,7 +72,7 @@ function BusinessSection() {
             Lorem ipsum dolor sit amet, consectetur adipiscing. Praesent vehicula magna sed ante molestie, quis elementum erat malesuada. Vivamus eu aliquam felis. Phasellus nec turpis.
         </>
     )
-    return Section("#00AACF", faHandshake, content, "-75%", "/foretag")
+    return Section("var(--foretag)", faHandshake, content, "-75%", "/foretag")
 }
 
 export { Section, SportsSection, BusinessSection }
