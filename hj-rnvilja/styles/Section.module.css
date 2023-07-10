@@ -17,14 +17,14 @@
 
 .img {
   color: var(--bg);
-  width: 50%;
+  width: 40%;
   cursor: inherit;
 }
 
 .span {
     text-align: center;
     width: 85%;
-    font-size: 1.25rem;
+    font-size: 1.05rem;
     margin-top: 40px;
     color: var(--bg);
  

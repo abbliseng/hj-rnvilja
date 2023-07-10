@@ -1,6 +1,9 @@
 import React, { useState, useRef } from 'react';
 import styles from '../styles/ShopButton.module.css';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+
 import { motion } from "framer-motion";
 
 export default function ShopButton() {
@@ -13,7 +16,7 @@ export default function ShopButton() {
                 window.open("/shop", "_self")
             }}
         >
-            <h2>SHOP</h2>
+            <FontAwesomeIcon icon={faShoppingCart} className={styles.img} />
             <span>Lorem ipsum dolor sit amet, pellentesque quis libero sapien :^)</span>
         </motion.div>
     )

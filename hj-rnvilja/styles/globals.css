@@ -1,5 +1,5 @@
 * {
-  /* outline: 1px solid red; */
+  /* outline: 1px solid rgb(250, 3, 3); */
 }
 
 :root {
@@ -9,7 +9,7 @@
   --idrott: #E18727;
   --foretag: #00AACF;
   --shop: #ED0C6E;
-  --superfriend: #ED0C6E;
+  --superfriend: #73d687;
 }
 
 html,
@@ -30,7 +30,14 @@ a {
 * {
   box-sizing: border-box;
   user-select: none; /* Disable text selection */
-  overflow: hidden;
+  overflow-x: hidden;
+}
+.container {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+*::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 
 img {
@@ -76,7 +83,7 @@ button {
 .toolbar {
   z-index: 1;
 
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -85,7 +92,7 @@ button {
   
   display: flex;
   flex-direction: row;
-  /* justify-content: end; */
+  justify-content: end;
   align-items: center;
 
   pointer-events:none;

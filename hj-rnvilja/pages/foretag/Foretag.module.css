@@ -1,0 +1,96 @@
+.container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100vw;
+    min-height: 100vh;
+    max-height: 300vh;
+    background-image: url("/foretag-wave-short-2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+
+    /* background-color: var(--foretag); */
+    padding: 5px;
+    border-radius: 5px;
+
+    justify-content: center;
+
+    width: 100%;
+
+    /* color: var(--bg); */
+}
+
+.break {
+    /* flex-basis: 100%; */
+    width: 100%;
+    height: 2px;
+    background-color: var(--shadow);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.left {
+    flex-basis: 15%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    color: var(--bg);
+}
+
+.right {
+    flex-basis: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    
+    /* text-align: center; */
+    
+    padding-left: 50px;
+    padding-right: 150px;
+}
+
+.right img {
+    margin-right: 30px;
+    border-radius: 5px;
+}
+
+.right * {
+    max-width: 1000px;
+    /* margin-top: 30px; */
+}
+
+.button {
+    margin-top: 30px;
+    background-color: var(--foretag);
+    border-radius: 15px;
+    flex-basis: 90%;
+    height: 60px;
+    color: var(--bg);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+
+    margin: 5px;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.card img {
+    width: 40%;
+    align-self: center;
+    margin-right: 0px;
+}

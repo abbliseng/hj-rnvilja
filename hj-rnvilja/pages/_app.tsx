@@ -12,6 +12,7 @@ function MyApp({ Component, pageProps }) {
     
     const router = useRouter()
     const btnColor = router.pathname == "/" ? "var(--bg)" : "var(--" + router.pathname.substring(1) + ")"
+    // const btnColor = "var(--bg)"
 
     return (
         <>

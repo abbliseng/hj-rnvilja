@@ -12,7 +12,7 @@ export default function Center() {
                 <motion.img
                     animate={{
                         scale: [0.8, 1],
-                        y: [0, 30]
+                        y: [-30, 0]
                     }}
                     transition={{ ease: "easeOut", duration: 1, delay: 0.5 }}
                     src="/hjarnviljaorange-transparent.png"
@@ -30,7 +30,7 @@ export default function Center() {
                 transition={{ ease: "easeOut", duration: 1, delay: 0.5 }}
             >
                 <img
-                    src="/PLACEHOLDER-main.jpg"
+                    src="/hjarnvilja/maria-camo.jpg"
                     alt="Hjärnvilja"
                     className={styles.centerImage}
                 />
