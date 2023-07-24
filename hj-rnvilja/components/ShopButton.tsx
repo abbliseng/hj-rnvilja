@@ -10,14 +10,14 @@ export default function ShopButton() {
     return (
         <motion.div 
             className={styles.shopButton}
-            initial={{ y: 70 }}
+            initial={{ y: 45 }}
             whileHover={{ y: 10 }}
             onClick={() => {
                 window.open("/shop", "_self")
             }}
         >
             <FontAwesomeIcon icon={faShoppingCart} className={styles.img} />
-            <span>Lorem ipsum dolor sit amet, pellentesque quis libero sapien :^)</span>
+            <h3>Workshops – Föreläsningar</h3>
         </motion.div>
     )
 

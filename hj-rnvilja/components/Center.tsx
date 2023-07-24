@@ -38,7 +38,14 @@ export default function Center() {
                     <SwitchButton rot="180" />
                     <SwitchButton rot="0" />
                 </div> */}
-                <span className={styles.centerImageSpan}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sodales nec neque cursus sodales. Integer sit amet consectetur est. Pellentesque quis libero sapien." - Someone smort</span>
+                <span className={styles.centerImageSpan}>
+                    {/* Hjärnvilja arbetar med att få företag och föreningar att sträva mot ett gemensamt mål och må bra på vägen dit. Genom samtal, inspirerande workshops och insiktsfulla övningar skapas lust, engagemang och välmående. Bättre resultat och mer energi får ni på köpet. Hjärnvilja tar sig även an enskilda individer som vill utvecklas inom sin sport eller i sitt yrkesliv. */}
+                    Hjärnvilja grundades genom förälskelsen till mental träning. Att kunna guida människor till prestationer de inte själva trodde var möjliga är en oslagbar känsla. Hjärnviljas ledstjärna är att göra mental träning så lättillgänglig som möjligt för alla, med enkla bilder, mycket energi och engagemang skapas förutsättningar för att du ska kunna bli ditt bästa jag.
+                    <br/><br/>
+                    Oavsett sammanhang kan alla ha användning av den mentala träningens övningar och verktyg. Vi kommer inte bara prestera bättre, vi får välmående, energi, fokus och självtillit på köpet.
+                    <br/><br/>
+                    Hjärnvilja erbjuder en webbkurs i grundläggande mental träning som på ett enkelt och pedagogiskt vis skapar förståelse för hur mental träning kan användas. Även individuell coaching erbjuds. Hjärnvilja har även föreläsningar och workshops för lag.
+                </span>
             </motion.div>
         </div>
     )

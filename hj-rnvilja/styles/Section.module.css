@@ -18,11 +18,13 @@
 .img {
   color: var(--bg);
   width: 40%;
+  max-width: 120px;
   cursor: inherit;
 }
 
 .span {
-    text-align: center;
+    /* text-align: center; */
+    text-align: start;
     width: 85%;
     font-size: 1.05rem;
     margin-top: 40px;

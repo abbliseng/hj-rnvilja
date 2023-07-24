@@ -53,15 +53,13 @@ function Section(color: string = "#FFA500", icon, content, percentage: string = 
 function SportsSection() {
     const content = (
         <>
-            Att vara sitt absolut bästa jag när det väl gäller är en konst. Många parametrar ska stämma för att vi ska hamna överst på prispallen. Att orka hela vägen fram till målet går enklare om vägen dit känns lärorik, utvecklande och guldkantad. Visst kan vi slita oss fram till ett guld, slå på oss själva och må dåligt under tiden. Men genom den mentala träningen skapar vi välmående genom att jobba för kroppen snarare än emot den. 
-            <br/><br/>
-            Tillsammans arbetar vi bort låsningar, ofördelaktiga mönster, ältande tankar. Istället lär du dig att lägga fokus på rätt moment, hur du bibehåller din energi och vad som skapar välmående för just dig. Allt för att du ska klara av hög inre press, förväntningar utifrån och kritiska moment när det verkligen gäller.
-            <br/><br/>
-            Hjärnvilja erbjuder en webbkurs i grundläggande mental träning som på ett enkelt och pedagogiskt vis skapar förståelse för hur mental träning kan användas. Även individuell coaching erbjuds. Hjärnvilja har även föreläsningar och workshops för lag.
-            <br/><br/>
-            <span style={{fontStyle:"italic"}}>
+            <h3 style={{textAlign:"center"}}>
+                Lagidrott – Individuell Idrott
+            </h3>
+            Att vara sitt absolut bästa jag när det väl gäller är en konst. Det är många parametrar som ska stämma för att vi ska stå överst på prispallen. För att orka behöver vägen fram till prispallen kännas guldkantad och härlig. Visst kan vi slita oss fram till ett guld, men det är bättre att jobba för kroppen än emot den. Genom att synka ihop kropp och hjärna kan du som idrottare lägga fokus på rätt moment vid träning och tävling. Den mentala träningen hjälper dig/er att frigöra energi, kraft och bli ert bästa jag.
+            <h4 style={{fontStyle:"italic", textAlign:"center", fontWeight:"400"}}>
                 Tryck för att läsa mer
-            </span>
+            </h4>
         </>
     )
     return Section("var(--idrott)", faVolleyball, content, "75%", "/idrott")
@@ -70,15 +68,15 @@ function SportsSection() {
 function BusinessSection() {
     const content = (
         <>
-            Ledarskap är en av Hjärnviljas stora passioner. Det finns alltid något nytt att lära och som ledare behöver du ofrånkomligen ta svåra beslut, skapa samsyn bland människor med olika viljor och samtidigt hålla ihop dig själv, även när det stormar som mest. Hjärnvilja kan bistå i alla olika lägen, både i förändring, utveckling, krishantering eller som utbildare och inspiratör. 
+            <h3 style={{textAlign:"center"}}>Ledarskap – Organisationsutveckling</h3>
+            Ledarskap är en av Hjärnviljas stora passioner. Det finns alltid något nytt att lära inom ledarskap och Hjärnvilja kan finnas med oavsett om det gäller förändringsarbete, utveckling, krishantering eller som utbildare och inspiratör.
             <br/><br/>
-            Hjärnviljas filosofi är att skapa ledare som är trygga, insiktsfulla, nyfikna och som vet när de behövs och när de kan backa. Lika viktigt som att ta tag i saker när det verkligen gäller, är det att kunna ge gruppen utrymme att försöka på egen hand. Det skapar självförtroende hos medarbetarna och tillit till ledaren. 
+            Som ledare behöver du ofrånkomligen ta svåra beslut, skapa samsyn bland människor med olika viljor och samtidigt hålla ihop dig själv, även när det stormar som mest. I de utmaningar du ställs inför som ledare kan Hjärnvilja vara en guide och en trygg punkt att bolla sina tankegångar med.
             <br/><br/>
-            Hjärnvilja erbjuder e-kurser, utbildningar, workshops samt individuell coaching av ledare. Välj från det befintliga utbudet eller skräddarsy efter era specifika behov.
-            <br/><br/>
-            <span style={{fontStyle:"italic"}}>
+            Hjärnvilja erbjuder e-kurser, utbildningar, workshops samt individuell coaching av ledare. Välj från det befintliga utbudet eller skräddarsy efter era specifika behov.  
+            <h4 style={{fontStyle:"italic", textAlign:"center", fontWeight:"400"}}>
                 Tryck för att läsa mer
-            </span>
+            </h4>
         </>
     )
     return Section("var(--foretag)", faHandshake, content, "-75%", "/foretag")

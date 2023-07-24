@@ -26,6 +26,7 @@
     margin: 10px;
     color: var(--bg);
     width: 6%;
+    max-width: 40px;
     cursor: inherit;
   }
 
@@ -35,6 +36,11 @@
     color: #E7E4CE;
     font-size: 1.5rem;
     font-weight: bold;
+  }
+
+  .shopButton h3 {
+    margin-top: -3px;
+    color: #E7E4CE;
   }
   
   .shopButton span {
