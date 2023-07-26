@@ -56,7 +56,7 @@ function SportsSection() {
             <h3 style={{textAlign:"center"}}>
                 Lagidrott – Individuell Idrott
             </h3>
-            Att vara sitt absolut bästa jag när det väl gäller är en konst. Det är många parametrar som ska stämma för att vi ska stå överst på prispallen. För att orka behöver vägen fram till prispallen kännas guldkantad och härlig. Visst kan vi slita oss fram till ett guld, men det är bättre att jobba för kroppen än emot den. Genom att synka ihop kropp och hjärna kan du som idrottare lägga fokus på rätt moment vid träning och tävling. Den mentala träningen hjälper dig/er att frigöra energi, kraft och bli ert bästa jag.
+            {/* Att vara sitt absolut bästa jag när det väl gäller är en konst. Det är många parametrar som ska stämma för att vi ska stå överst på prispallen. För att orka behöver vägen fram till prispallen kännas guldkantad och härlig. Visst kan vi slita oss fram till ett guld, men det är bättre att jobba för kroppen än emot den. Genom att synka ihop kropp och hjärna kan du som idrottare lägga fokus på rätt moment vid träning och tävling. Den mentala träningen hjälper dig/er att frigöra energi, kraft och bli ert bästa jag. */}
             <h4 style={{fontStyle:"italic", textAlign:"center", fontWeight:"400"}}>
                 Tryck för att läsa mer
             </h4>
@@ -69,11 +69,11 @@ function BusinessSection() {
     const content = (
         <>
             <h3 style={{textAlign:"center"}}>Ledarskap – Organisationsutveckling</h3>
-            Ledarskap är en av Hjärnviljas stora passioner. Det finns alltid något nytt att lära inom ledarskap och Hjärnvilja kan finnas med oavsett om det gäller förändringsarbete, utveckling, krishantering eller som utbildare och inspiratör.
+            {/* Ledarskap är en av Hjärnviljas stora passioner. Det finns alltid något nytt att lära inom ledarskap och Hjärnvilja kan finnas med oavsett om det gäller förändringsarbete, utveckling, krishantering eller som utbildare och inspiratör.
             <br/><br/>
             Som ledare behöver du ofrånkomligen ta svåra beslut, skapa samsyn bland människor med olika viljor och samtidigt hålla ihop dig själv, även när det stormar som mest. I de utmaningar du ställs inför som ledare kan Hjärnvilja vara en guide och en trygg punkt att bolla sina tankegångar med.
             <br/><br/>
-            Hjärnvilja erbjuder e-kurser, utbildningar, workshops samt individuell coaching av ledare. Välj från det befintliga utbudet eller skräddarsy efter era specifika behov.  
+            Hjärnvilja erbjuder e-kurser, utbildningar, workshops samt individuell coaching av ledare. Välj från det befintliga utbudet eller skräddarsy efter era specifika behov.   */}
             <h4 style={{fontStyle:"italic", textAlign:"center", fontWeight:"400"}}>
                 Tryck för att läsa mer
             </h4>
