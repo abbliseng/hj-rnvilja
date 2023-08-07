@@ -204,9 +204,9 @@ export default function BusinessPage({ }) {
           Hjärnvilja kan vara behjälplig vid en organisationsutveckling eller i en förändringsprocess. Ofta behöver detta gå hand i hand med att ledarskapet utvecklas. Hjärnvilja kan hjälpa er med att få de anställda att känna sig trygga och skapa god kommunikation och samtidigt stötta ledarna att hitta ett sätt att leda som passar både individen och företaget. Hjärnvilja bidrar med kunskap och utbildning under hela processen, skapar handlingsplaner och följer upp arbetet.
         </div>
         <div className={styles.break}></div>
-        <Workshops />
+        <Workshops styles={styles}/>
         <div className={styles.break}></div>
-        <FormsSection />
+        <FormsSection styles={styles}/>
         <div className={styles.break}></div>
         <motion.button
           onClick={() => {

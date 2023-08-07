@@ -62,7 +62,7 @@ function SportsSection() {
             </h4>
         </>
     )
-    return Section("var(--idrott)", faVolleyball, content, "75%", "/idrott")
+    return Section("var(--idrott)", faVolleyball, content, "75%", "/idrott.html")
 }
 
 function BusinessSection() {
@@ -79,7 +79,7 @@ function BusinessSection() {
             </h4>
         </>
     )
-    return Section("var(--foretag)", faHandshake, content, "-75%", "/foretag")
+    return Section("var(--foretag)", faHandshake, content, "-75%", "/foretag.html")
 }
 
 export { Section, SportsSection, BusinessSection }

@@ -1,12 +1,11 @@
 import React, { useState, useRef } from 'react';
-import styles from "../pages/foretag/Foretag.module.css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 import { motion } from "framer-motion";
 
-function Form() {
+function Form({styles}) {
     return (
         <div style={{flexBasis:"50%"}}>
             {/* Form with username and password */}
@@ -55,7 +54,7 @@ function Form() {
     )
 }
 
-export default function FormsSection() {
+export default function FormsSection({styles}) {
     const description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sodales nec neque cursus sodales. Integer sit amet consectetur est. Pellentesque quis libero sapien."
     return (
         <div
@@ -65,14 +64,14 @@ export default function FormsSection() {
                 flexDirection: "column",
             }}
         >
-            <h1 style={{textAlign:"center"}}>Kursportal | Intresseanmälan</h1>
+            <h1 style={{textAlign:"center"}}>Kursportal - Intresseanmälan</h1>
             <div className={styles.row}>
                 <p style={{flexBasis:"50%"}}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
-                <Form />
+                <Form styles={styles}/>
             </div>
         </div>
     )

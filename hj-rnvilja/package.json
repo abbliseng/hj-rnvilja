@@ -2,20 +2,21 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "firebase": "^9.22.2",
+    "firebase": "^9.23.0",
     "framer-motion": "^10.12.17",
-    "next": "latest",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "next": "^13.4.13",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-firebase-hooks": "^5.1.1",
     "react-transition-group": "^4.4.5",
+    "reactfire": "^4.2.3",
     "swiper": "^10.0.4"
   },
   "devDependencies": {
