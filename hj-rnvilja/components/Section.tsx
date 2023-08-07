@@ -68,13 +68,13 @@ function SportsSection() {
 function BusinessSection() {
     const content = (
         <>
-            <h3 style={{textAlign:"center"}}>Ledarskap – Organisationsutveckling</h3>
+            <h3 className="title-font" style={{textAlign:"center"}}>Ledarskap – Organisationsutveckling</h3>
             {/* Ledarskap är en av Hjärnviljas stora passioner. Det finns alltid något nytt att lära inom ledarskap och Hjärnvilja kan finnas med oavsett om det gäller förändringsarbete, utveckling, krishantering eller som utbildare och inspiratör.
             <br/><br/>
             Som ledare behöver du ofrånkomligen ta svåra beslut, skapa samsyn bland människor med olika viljor och samtidigt hålla ihop dig själv, även när det stormar som mest. I de utmaningar du ställs inför som ledare kan Hjärnvilja vara en guide och en trygg punkt att bolla sina tankegångar med.
             <br/><br/>
             Hjärnvilja erbjuder e-kurser, utbildningar, workshops samt individuell coaching av ledare. Välj från det befintliga utbudet eller skräddarsy efter era specifika behov.   */}
-            <h4 style={{fontStyle:"italic", textAlign:"center", fontWeight:"400"}}>
+            <h4 style={{fontStyle:"italic", textAlign:"center"}}>
                 Tryck för att läsa mer
             </h4>
         </>

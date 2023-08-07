@@ -30,7 +30,7 @@ export default function Center() {
                 transition={{ ease: "easeOut", duration: 1, delay: 0.5 }}
             >
                 <img
-                    src="/hjarnvilja/maria-camo.jpg"
+                    src="/hjarnvilja/maria-hoppar.jpg"
                     alt="Hjärnvilja"
                     className={styles.centerImage}
                 />

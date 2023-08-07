@@ -10,7 +10,7 @@ function Form() {
     return (
         <div style={{flexBasis:"50%"}}>
             {/* Form with username and password */}
-            <form>
+            <form className={styles.form}>
                 <label>
                     Namn:
                     <input type="text" name="name" />
@@ -28,14 +28,28 @@ function Form() {
                     Telefon:
                     <input type="text" name="phone" />
                 </label>
-                <label>
+                <div className={styles.own_row_label}>
                     Vad är du intresserad av?
-                    <input type="checkbox" value="Mental träning" />
-                </label>
-                <label>
+                    <div>
+                        <label htmlFor="workshops">Workshops:</label>
+                        <input type="checkbox" id="workshops" name="workshops" />
+                    </div>
+                    <div>
+                        <label htmlFor="forelasningar">Föreläsningar:</label>
+                        <input type="checkbox" id="forelasningar" name="forelasningar" />
+                    </div>
+                    <div>
+                        <label htmlFor="utbildningar">Utbildningar:</label>
+                        <input type="checkbox" id="utbildningar" name="utbildningar" />
+                    </div>
+                </div>
+                <label className={styles.own_row_label}>
                     Meddelande:
                     <textarea name="message" />
                 </label>
+                <motion.input 
+                    whileHover={{ scale: 1.025 }}
+                type="submit" value="Skicka" />
             </form>
         </div>
     )
@@ -49,7 +63,6 @@ export default function FormsSection() {
                 width: "100%",
                 display: "flex",
                 flexDirection: "column",
-                // alignItems: "center",
             }}
         >
             <h1 style={{textAlign:"center"}}>Kursportal | Intresseanmälan</h1>
