@@ -131,6 +131,8 @@
     flex-grow: 1;
 
     margin: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     border-radius: 5px;
     padding: 15px;
 }

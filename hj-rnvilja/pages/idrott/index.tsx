@@ -255,7 +255,7 @@ export default function SportsPage({ }) {
         <div className={styles.row}>
           <img
             src="/hjarnvilja/drawn/tarta.png"
-            alt="office"
+            alt="tarta"
             className={styles.inline_img}
             style={{
               float: "left",
