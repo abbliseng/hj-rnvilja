@@ -64,12 +64,10 @@ export default function FormsSection({styles}) {
                 flexDirection: "column",
             }}
         >
-            <h1 style={{textAlign:"center"}}>Kursportal - Intresseanmälan</h1>
+            <h1 style={{textAlign:"center"}}>Vill du veta mer?</h1>
             <div className={styles.row}>
                 <p style={{flexBasis:"50%"}}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    bla bla bla... vill du veta mer? bla bla bla... funderingar, frågor... bla bla bla... hör av dig... bla bla bla... återkommer... bla bla bla...
                 </p>
                 <Form styles={styles}/>
             </div>

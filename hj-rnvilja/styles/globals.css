@@ -139,7 +139,7 @@ button {
   align-items: center;
   justify-content: center;
   border-radius: 18px;
-  color: #fff;
-  background-color: #222;
+  /* color: #fff; */
+  background-color: var(--bg);/* #222; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

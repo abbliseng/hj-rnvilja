@@ -15,13 +15,16 @@ function WorkshopCard({styles, description, title, img}) {
         >
             <motion.img 
                 src={img}
-                whileTap={{
-                    scale: 0.9,
-                }}
+                whileTap={{ scale: 0.9 }}
             ></motion.img>
-            {/* <h2 style={{textAlign:"center"}}>{title}</h2> */}
+            <h2 style={{
+                textAlign:"center",
+                fontFamily: "Oswald",
+                paddingTop: "15px"
+            }}>{title}</h2>
             <hr/>
-            <p>{description}</p>
+            <p style={{paddingBottom: "15px"}}>{description}</p>
+            <motion.button whileHover={{ scale: 1.025 }} whileTap={{ scale: 0.9 }}>Boka här!</motion.button>
         </motion.div>
     )
 }
@@ -41,11 +44,26 @@ export default function Workshops({
             // cursor: "pointer",
         }}
         >
-            <h1>Workshops</h1>
+            <h1>Erbjudanden</h1>
             <div className={styles.row}>
-                <WorkshopCard styles={styles} title="Workshop 1" description={description} img={img_src}/>
-                <WorkshopCard styles={styles} title="Workshop 2" description={description} img={img_src}/>
-                <WorkshopCard styles={styles} title="Workshop 3" description={description} img={img_src}/>
+                <WorkshopCard
+                    styles={styles}
+                    title="Workshop - Citronen"
+                    description={"I denna workshop får vi chanson att möta våra känslor och ser om vi använder dessa på ett uppbyggande vis. Vad händer i laget när det går dåligt? Hur pratar vi med och om varandra inför och under ett tävlingstillfälle. Hur låter jag mina känslor påverka andra runt mig? Ofta kommer negativa känslor fram om vi verkligen vill vinna men ser chansen försvinna ifrån oss, skulle vi kunna hitta en kommunikation som gör oss starkare och ökar våra chanser att vända den nedåtgående spiralen?"}
+                    img={"/hjarnvilja/drawn/citron.png"}
+                />
+                <WorkshopCard
+                    styles={styles}
+                    title="Workshop - Trädet"
+                    description={"Självförtroende och självkänsla är två viktiga byggstenar i vårt liv och har stor påverkan på vårt mående. Men vad står dessa ord för, vad är det som skiljer dem åt och varför räcker det inte med bara den ena? I denna workshop går vi igenom begreppen och skapar lagets egna träd, med våra specifika styrkor och egenskaper. Det krävs mod att säga vad jag är bra på och vilka goda egenskaper jag har, därför blir denna övning lika mycket en individuell utmaning som en lagprestation. När övningen är slut har vi byggt trädet som symboliserar vårt lag."}
+                    img={"/hjarnvilja/drawn/tradet.png"}
+                />
+                <WorkshopCard
+                    styles={styles}
+                    title="Föreläsningar"
+                    description={"Hjärnviljas ledstjärna är att göra mental träning så lättillgänglig som möjligt för alla. Grundläggande övningar, verktyg och tankesätt förklaras med hjälp av enkla bilder och framförs med energi, engagemang och en gnutta humor. En föreläsning med Hjärnvilja skapar förutsättningar för att du ska kunna bli ditt bästa jag, både måendemässigt och inom det du önskar prestera i livet."}
+                    img={"/hjarnvilja/foretag/maria-forelasning.jpg"}
+                />
             </div>
         </motion.div>
     )

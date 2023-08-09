@@ -13,7 +13,7 @@ export default function ShopButton() {
             initial={{ y: 45 }}
             whileHover={{ y: 10 }}
             onClick={() => {
-                window.open("/shop", "_self")
+                window.open("/shop.html", "_self")
             }}
         >
             <FontAwesomeIcon icon={faShoppingCart} className={styles.img} />

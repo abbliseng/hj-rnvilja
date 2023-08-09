@@ -39,6 +39,9 @@
   }
 
   .shopButton h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
     margin-top: -3px;
     color: #E7E4CE;
   }
