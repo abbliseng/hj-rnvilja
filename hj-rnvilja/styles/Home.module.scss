@@ -1,15 +1,64 @@
 @use './variables.module.scss' as vars;
 
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
 .container {
+  display: none !important;
+
   min-height: 100vh;
   min-width: 100vw;
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
 
   align-items: stretch;
 
   overflow: hidden;
+
+  @include for-tablet-landscape-up {
+    display: flex !important;
+  }
+}
+
+.container_2 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  @include for-tablet-landscape-up {
+    display: none !important;
+  }
+}
+
+.hamburger_item {
+  text-align: center;
+  padding: 20px;
+  flex-basis: 20%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: vars.$bg;
+}
+
+.img {
+  padding-top: 20px;
+  max-width: 70px;
 }
 
 .centerSection {
