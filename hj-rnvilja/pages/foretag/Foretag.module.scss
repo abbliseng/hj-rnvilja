@@ -91,14 +91,16 @@
 
     &_course {
         float: left;
-        margin-right: 20px;
         border: 0px;
         flex-basis: 100%;
         margin-bottom: 0px;
 
+        margin-right: 0px !important;
+        
         @include for-tablet-portrait-up {
             width: 45%;
             flex-basis: 25%;
+            margin-right: 20px;
         }
     }
 
@@ -163,7 +165,10 @@
 }
 
 .right img {
-    margin-right: 30px;
+    margin-right: 0px !important;
+    @include for-tablet-portrait-up {
+        margin-right: 30px;
+    }
     border-radius: 5px;
 }
 
