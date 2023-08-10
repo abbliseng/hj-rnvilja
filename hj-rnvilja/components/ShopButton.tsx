@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import styles from '../styles/ShopButton.module.css';
+import styles from '../styles/ShopButton.module.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'

@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Home.module.scss';
 import React from 'react';
 import ShopButton from '../components/ShopButton';
 import Center from '../components/Center';

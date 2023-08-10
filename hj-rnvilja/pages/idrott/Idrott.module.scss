@@ -1,0 +1,355 @@
+@use "/styles/variables.module.scss" as vars;
+
+@mixin for-phone-only {
+    @media (max-width: 599px) {
+        @content;
+    }
+}
+@mixin for-tablet-portrait-up {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+@mixin for-tablet-landscape-up {
+    @media (min-width: 900px) {
+        @content;
+    }
+}
+@mixin for-desktop-up {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+@mixin for-big-desktop-up {
+    @media (min-width: 1800px) {
+        @content;
+    }
+}
+
+.container {
+    padding-top: 60px;
+    width: 100%;
+    /* width: 100vw; */
+    /* min-height: 100vh; */
+    /* max-height: 300vh; */
+    /* background-image: url("/foretag-wave-short-2.svg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: flex-end;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+
+    padding: 5px;
+    border-radius: 5px;
+
+    justify-content: center;
+
+    width: 100%;
+    text-align: start;
+}
+
+.inline_text {
+    flex-basis: 60%;
+    text-align: start;
+    flex-grow: 1;
+}
+.inline_title {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: start;
+    flex-grow: 1;
+}
+
+.readmore {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: start;
+    flex-grow: 1;
+    color: vars.$idrott;
+    cursor: pointer;
+}
+
+.inline_img {
+    object-fit: cover;
+    flex-basis: 55%;
+    /* margin-right: 0px !important; */
+    margin-bottom: 20px;
+    // border: 5px solid vars.$idrott;
+    border-radius: 0px !important;
+    float: right;
+    width: 100%;
+
+    &_course {
+        float: left;
+        margin-right: 20px;
+        border: 0px;
+        flex-basis: 100%;
+        margin-bottom: 0px;
+
+        @include for-tablet-portrait-up {
+            width: 45%;
+            flex-basis: 25%;
+        }
+    }
+
+    @include for-tablet-portrait-up {
+        width: 45%;
+    }
+}
+
+.course_text {
+    flex-basis: 100%;
+    min-width: 300px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include for-tablet-portrait-up {
+        width: 45%;
+        flex-basis: 70%;
+    }
+}
+
+.break {
+    /* flex-basis: 100%; */
+    width: 100%;
+    height: 2px;
+    background-color: vars.$shadow;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.left {
+    margin-top: -65px;
+    color: vars.$bg;
+    background-color: vars.$idrott;
+
+    @include for-tablet-portrait-up {
+        flex-basis: 10%;
+        min-width: 75px;
+        max-width: 150px;
+    }
+}
+
+.right {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    height: 100%;
+
+    /* text-align: center; */
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    @include for-tablet-portrait-up {
+        flex-basis: 90%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+.right img {
+    margin-right: 30px;
+    border-radius: 5px;
+}
+
+.right * {
+    max-width: 1000px;
+    /* margin-top: 30px; */
+}
+
+.right button {
+    background-color: vars.$idrott;
+    border-radius: 15px;
+    height: 60px;
+    width: 100%;
+    color: vars.$bg;
+}
+
+.button {
+    margin-top: 30px;
+    background-color: vars.$idrott;
+    border-radius: 15px;
+    flex-basis: 90%;
+    height: 60px;
+    color: vars.$bg;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 300px;
+    flex-grow: 1;
+    flex-basis: 30%;
+
+    margin: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.card img {
+    width: 45%;
+    align-self: center;
+    margin-right: 0px;
+}
+
+.card button {
+    margin-top: auto;
+}
+
+/* REFERENCES */
+
+.ref_card {
+    width: 100%;
+    height: 100%;
+
+    border: 6px solid vars.$idrott;
+    border-radius: 18px;
+
+    display: flex;
+    flex-direction: row;
+}
+.ref_card_img_section {
+    flex-basis: 40%;
+    overflow: hidden;
+}
+.ref_card_img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+.ref_card_text_section {
+    flex-basis: 60%;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ref_card_text_title {
+    font-family: "Oswald", sans-serif;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.ref_card_text_description {
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.text_title_centered {
+    font-family: "Oswald", sans-serif;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.form_container {
+    flex-basis: 100%;
+    @include for-tablet-portrait-up {
+        flex-basis: 50%;
+    }
+}
+
+.form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+}
+
+.form > label {
+    margin-top: 5px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+}
+
+.form > div {
+    margin-top: 5px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+}
+
+.form > input {
+    border: 0px solid black;
+    background-color: vars.$idrott;
+    color: white;
+    margin-top: 5px;
+    height: 30px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form > label > input {
+    max-width: 85%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    flex-grow: 1;
+    border: 0px solid black;
+    background-color: vars.$shadow;
+}
+
+.form > div > div > label {
+    margin-top: 5px;
+    font-weight: 400;
+    padding-left: 30px;
+}
+
+.form > label > textarea {
+    max-width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    flex-grow: 1;
+    border: 0px solid black;
+    background-color: vars.$shadow;
+    height: 90px;
+}
+
+.own_row_label {
+    display: flex;
+    flex-direction: column;
+}
+
+.hideRefs {
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    h1 {
+        text-align: center;
+    }
+
+    @include for-tablet-landscape-up {
+        display: block;
+    }
+}

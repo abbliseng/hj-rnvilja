@@ -1,0 +1,139 @@
+@use './variables.module.scss' as vars;
+
+.container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.arrows {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+}
+
+.arrows > .magenta_1 {
+    position: absolute;
+    rotate: 180deg;
+    width: 50px;
+    left: calc(25% - 25px);
+    top: calc(100% - 215px);
+}
+
+.arrows > .magenta_1_span {
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    left: calc(25% - 65px);
+    top: calc(100% - 255px);
+    font-size: 1.3rem;
+}
+
+.arrows > .blue_1 {
+    position: absolute;
+    rotate: 180deg;
+    width: 150px;
+    left: 15px;
+    top: calc(65%);
+}
+
+.arrows > .blue_1_span {
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    font-size: 1.3rem;
+    width: 140px;
+    left: 130px;
+    top: calc(65% - 25px);
+    rotate: 10deg;
+}
+
+.arrows > .blue_2 {
+    position: absolute;
+    /* rotate: 270deg; */
+    width: 110px;
+    left: 15px;
+    top: calc(15%);
+}
+
+.arrows > .blue_2_span {
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    font-size: 1.3rem;
+    width: 140px;
+    left: 90px;
+    top: calc(15% - 20px);
+    rotate: 15deg;
+}
+
+.arrows > .orange_1 {
+    position: absolute;
+    rotate: 270deg;
+    width: 75px;
+    left: calc(50% - 130px);
+    top: calc(15%);
+}
+.arrows > .orange_1_span {
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    left: calc(50% - 220px);
+    font-size: 1.3rem;
+    top: calc(15% + 20px);
+    rotate: 340deg;
+}
+
+.arrows > .orange_2 {
+    position: absolute;
+    rotate: 260deg;
+    width: 70px;
+    left: calc(50% - 140px);
+    top: calc(55%);
+}
+.arrows > .orange_2_span {
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    left: calc(50% - 230px);
+    font-size: 1.3rem;
+    top: calc(55% + 50px);
+    rotate: 355deg;
+}
+
+.logo {
+    /* height: 100%; */
+    aspect-ratio: 1 / 1;
+    width: clamp(50px, 80%, 700px);
+}
+
+.logoSection {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: -20px;
+}
+
+/* Button stuff */
+.buttonSection {
+    /* background-color: aqua; */
+    width: 100%;
+    flex-basis: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: clamp(50px, 50px, 25%);
+    margin: 7px;
+    aspect-ratio : 1 / 1;
+    /* background-color: #e0dcc0; */
+    border-radius: 10px;
+    /* border: 3px solid #101315ff; */
+    cursor: pointer;
+    /* box-shadow: 0px 0px 0px #000000ff; */
+    color: vars.$shadow;
+}

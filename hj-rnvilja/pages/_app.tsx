@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
-import '../styles/globals.css'
+import '../styles/globals.scss'
 import Head from 'next/head';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faHome, faDoorOpen, faDoorClosed } from '@fortawesome/free-solid-svg-icons'
 import { motion } from "framer-motion";
 import { useRouter } from 'next/router';
 import Link from 'next/link'
+import variables from '/styles/variables.module.scss'
 
 function MyApp({ Component, pageProps }) {
     const [isHovered, setIsHovered] = useState(false);
     
     const router = useRouter()
-    const btnColor = router.pathname == "/" ? "var(--bg)" : "var(--" + router.pathname.substring(1) + ")"
+    const btnColor = router.pathname == "/" ? variables.$bg : "var(--" + router.pathname.substring(1) + ")"
     // const btnColor = "var(--bg)"
 
     return (

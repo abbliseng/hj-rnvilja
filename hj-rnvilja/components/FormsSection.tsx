@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 function Form({styles}) {
     return (
-        <div style={{flexBasis:"50%"}}>
+        <div className={styles.form_container}>
             {/* Form with username and password */}
             <form className={styles.form}>
                 <label>
@@ -65,8 +65,12 @@ export default function FormsSection({styles}) {
             }}
         >
             <h1 style={{textAlign:"center"}}>Vill du veta mer?</h1>
-            <div className={styles.row}>
-                <p style={{flexBasis:"50%"}}>
+            <div className={styles.row}
+                style={{
+                    flexWrap: "wrap",
+                }}
+            >
+                <p className={styles.form_container}>
                     bla bla bla... vill du veta mer? bla bla bla... funderingar, frågor... bla bla bla... hör av dig... bla bla bla... återkommer... bla bla bla...
                 </p>
                 <Form styles={styles}/>

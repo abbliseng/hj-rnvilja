@@ -1,4 +1,4 @@
-import styles from "./Foretag.module.css";
+import styles from "./Foretag.module.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -248,26 +248,17 @@ export default function SportsPage({ }) {
         <Workshops styles={styles} t={"foretag"} />
         <div className={styles.break}></div>
         <h1>Webbkurs</h1>
-        <div className={styles.row}>
+        <div className={styles.row}
+          style={{
+            flexWrap: "wrap",
+          }}
+        >
           <img
             src="/hjarnvilja/drawn/tarta.png"
             alt="tarta"
-            className={styles.inline_img}
-            style={{
-              float: "left",
-              marginRight: "20px",
-              border: "0px",
-              flexBasis: "30%",
-              marginBottom: "0px"
-            }}
+            className={styles.inline_img_course}
           />
-          <div style={{
-            flexBasis: "70%",
-            height: "inherit",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-between",
-          }}>
+          <div className={styles.course_text}>
             Hjärnvilja erbjuder en webbkurs i grundläggande mental träning som på ett enkelt och pedagogiskt vis skapar förståelse för hur mental träning kan användas. Kursens syfte är att genom välmående, energi och fokus lyckas få dig att prestera bättre samtidigt som vägen dit känns utvecklande och rolig.
             <motion.button
               whileHover={{ scale: 1.025 }} whileTap={{ scale: 0.9 }}
@@ -275,20 +266,23 @@ export default function SportsPage({ }) {
                 marginBottom: "20px",
                 width: "90%",
                 alignSelf: "center",
+                marginTop: "20px",
               }}
             >Shoppa kurs</motion.button>
           </div>
         </div>
         <div className={styles.break}></div>
-        <h1>Referenser</h1>
-        <div style={{
-          width: "100%",
-          minHeight: "300px",
-          position: "relative",
-        }}>
-          <SwiperReferences references={references} />
+        <div className={styles.hideRefs}>
+          <h1>Referenser</h1>
+          <div style={{
+            width: "100%",
+            minHeight: "300px",
+            position: "relative",
+          }}>
+            <SwiperReferences references={references} />
+          </div>
+          <div className={styles.break}></div>
         </div>
-        <div className={styles.break}></div>
         <FormsSection styles={styles} />
         <div className={styles.break}></div>
         {/* <motion.button

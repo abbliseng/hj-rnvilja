@@ -43,11 +43,14 @@ export default function Workshops({
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            // cursor: "pointer",
         }}
         >
             <h1>Erbjudanden</h1>
-            <div className={styles.row}>
+            <div className={styles.row}
+                style={{
+                    flexWrap: "wrap",
+                }}
+            >
                 <WorkshopCard
                     styles={styles}
                     title="Workshop - Citronen"

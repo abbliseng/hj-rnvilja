@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import styles from '../styles/Section.module.css'
+import styles from '../styles/Section.module.scss'
 import Link from 'next/link'
+import variables from '../styles/variables.module.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHandshake, faVolleyball } from '@fortawesome/free-solid-svg-icons'
@@ -62,7 +63,7 @@ function SportsSection() {
             </h4>
         </>
     )
-    return Section("var(--idrott)", faVolleyball, content, "75%", "/idrott.html")
+    return Section(variables.idrott, faVolleyball, content, "75%", "/idrott.html")
 }
 
 function BusinessSection() {
@@ -79,7 +80,7 @@ function BusinessSection() {
             </h4>
         </>
     )
-    return Section("var(--foretag)", faHandshake, content, "-75%", "/foretag.html")
+    return Section(variables.foretag, faHandshake, content, "-75%", "/foretag.html")
 }
 
 export { Section, SportsSection, BusinessSection }
