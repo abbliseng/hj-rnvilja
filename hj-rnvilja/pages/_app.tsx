@@ -29,19 +29,19 @@ function PageNav(sections) {
             {
                 (btnColor == "var(--idrott)" || btnColor == "var(--foretag)") &&
                 <>
-                
+
                     <motion.button
-                    onClick={() => setShow(!show)}
-                            className='toolbar-btn toolbar-btn-menu'
-                            style={{
-                                color: btnColor
-                            }}
-                            whileHover={{
-                                scale: 1.1,
-                            }}
-                        >
-                            <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
-                        </motion.button>
+                        onClick={() => setShow(!show)}
+                        className='toolbar-btn toolbar-btn-menu'
+                        style={{
+                            color: btnColor
+                        }}
+                        whileHover={{
+                            scale: 1.1,
+                        }}
+                    >
+                        <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
+                    </motion.button>
                     <motion.div
                         className="pageNav"
                         animate={{ height: height }}
@@ -53,10 +53,10 @@ function PageNav(sections) {
                             sections.sections.map((section, index) => (
                                 <>
                                     <a href={section.id}
-                                    
-                                    onClick={() => setShow(false)}
+
+                                        onClick={() => setShow(false)}
                                     >
-                                        { section.text }
+                                        {section.text}
                                     </a>
                                     <div style={{
                                         height: "5px",
@@ -72,13 +72,13 @@ function PageNav(sections) {
                     >
                         {
                             sections.sections.map((section, index) => (
-                                <a 
+                                <a
                                     style={{
                                         color: btnColor
                                     }}
                                     href={section.id}
                                 >
-                                    { section.text }
+                                    {section.text}
                                 </a>
                             ))
                         }
@@ -91,12 +91,16 @@ function PageNav(sections) {
 
 function MyApp({ Component, pageProps }) {
     const [isHovered, setIsHovered] = useState(false);
-    
+
     const router = useRouter()
     const btnColor = router.pathname == "/" ? variables.$bg : "var(--" + router.pathname.substring(1) + ")"
     // const btnColor = "var(--bg)"
 
     const sections = [
+        {
+            text: "Utbildningar",
+            id: "#ed",
+        },
         {
             text: "Erbjudanden",
             id: "#offers",
@@ -104,10 +108,6 @@ function MyApp({ Component, pageProps }) {
         {
             text: "Webbkurs",
             id: "#course",
-        },
-        {
-            text: "Utbildningar",
-            id: "#ed",
         },
         {
             text: "Referrenser",
@@ -129,8 +129,8 @@ function MyApp({ Component, pageProps }) {
                 <title>Hjärnvilja</title>
                 <link rel="icon" href="/asteriskorange-transparent.png" />
             </Head>
-                {router.pathname != "/" &&
-            <div className='toolbar'>
+            {router.pathname != "/" &&
+                <div className='toolbar'>
                     <Link href="/">
                         <motion.button
                             className='toolbar-btn'
@@ -145,14 +145,14 @@ function MyApp({ Component, pageProps }) {
                         >
                             {
                                 isHovered ?
-                                <FontAwesomeIcon icon={faDoorOpen}></FontAwesomeIcon> :
-                                <FontAwesomeIcon icon={faDoorClosed}></FontAwesomeIcon> 
+                                    <FontAwesomeIcon icon={faDoorOpen}></FontAwesomeIcon> :
+                                    <FontAwesomeIcon icon={faDoorClosed}></FontAwesomeIcon>
                             }
                         </motion.button>
                     </Link>
-                <PageNav sections={sections}/>
-            </div>
-                }
+                    <PageNav sections={sections} />
+                </div>
+            }
             <Component {...pageProps} />
         </>
     )

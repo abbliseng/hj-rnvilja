@@ -161,14 +161,24 @@ export default function SportsPage({ }) {
   return (
     <main className={styles.container}>
       <div className={styles.right}>
-        {/* <h1 style={{ width: "100%", textAlign: "center" }}>Om mig - Idrott</h1> */}
-        <div className={styles.row}>
-          <div className={styles.inline_title}>
-            Hjärnvilja är synonymt med mig, Maria Nilsson, och jag önskar er hjärtligt välkomna till min hemsida!
-            <br /><br />
+
+        <div id="title" className={styles.sector}
+          style={{
+            paddingTop: "0px"
+          }}
+        >
+          <div className={styles.row}>
+            <div className={styles.inline_title}
+              style={{
+                textAlign: "center",
+                fontSize: "1.5rem",
+              }}
+            >
+              Hjärnvilja är synonymt med mig, Maria Nilsson, och jag önskar er hjärtligt välkomna till min hemsida!
+              <br /><br />
+            </div>
           </div>
-        </div>
-        <div>
+
           <img
             src="/hjarnvilja/foretag/office-1.jpg"
             alt="office"
@@ -193,12 +203,26 @@ export default function SportsPage({ }) {
               <li>- Mental träning från Skandinaviska Ledarhögskolan (Lars-Eric Uneståhl)</li>
               <li>- Många års arbete med barn och ungdomar</li>
               <li>- En satsning inom kampsport som fick ett abrupt slut</li>
-              <li>- 16 års erfarenhet av att föreläsa (är bland annat föreläsare hos SISU idrottsutbildarna)</li>
+              <li>- 24 års erfarenhet av att föreläsa (är bland annat föreläsare hos SISU idrottsutbildarna)</li>
               <li>- En personlighet som bidrar med glädje, energi och mod</li>
             </ul>
           </div>
-            
         </div>
+
+        
+        <div id="ed" className={`${styles.sector} ${styles.sector_light}`}>
+          <h1>Utbildningar</h1>
+          <div>
+            Hjärnvilja arbetar med att få företag och föreningar att sträva mot ett gemensamt mål och må bra på vägen dit. Genom samtal, inspirerande workshops och insiktsfulla övningar skapas lust, engagemang och välmående. Bättre resultat och mer energi får ni på köpet. Hjärnvilja tar sig även an enskilda individer som vill utvecklas inom sin sport eller i sitt yrkesliv.
+            <br /><br />
+            <div className={styles.text_title_centered}>
+              Lagidrott – Individuell Idrott
+            </div>
+            <br />
+            Att vara sitt absolut bästa jag när det väl gäller är en konst. Det är många parametrar som ska stämma för att vi ska stå överst på prispallen. För att orka behöver vägen fram till prispallen kännas guldkantad och härlig. Visst kan vi slita oss fram till ett guld, men det är bättre att jobba för kroppen än emot den. Genom att synka ihop kropp och hjärna kan du som idrottare lägga fokus på rätt moment vid träning och tävling. Den mentala träningen hjälper dig/er att frigöra energi, kraft och bli ert bästa jag.
+          </div>
+        </div>
+
         {/* TODO: Sponsor loggor */}
         {/* <div className={styles.break}></div> */}
         {/* <div
@@ -216,16 +240,17 @@ export default function SportsPage({ }) {
           <SponsorLogo icon={faShoppingCart} />
           <SponsorLogo icon={faHippo} />
         </div> */}
-        <div id="offers" className={styles.break}></div>
-        <Workshops styles={styles} t={"idrott"} />
-        <div id="course" className={styles.break}></div>
+        {/* <div id="offers" className={styles.break}></div> */}
+        <div id="offers" className={styles.sector}>
+          <Workshops styles={styles} t={"idrott"} />
+        </div>
+        {/* <div id="course" className={styles.break}></div> */}
+
         <div
-          style={{
-            backgroundColor: "var(--bg-light)",
-            borderRadius: "5px",
-          }}
+          id="course"
+          className={`${styles.sector} ${styles.sector_light}`}
         >
-          <h1 style={{textAlign: "center"}}>Webbkurs</h1>
+          <h1 style={{ textAlign: "center" }}>Webbkurs</h1>
           <div className={styles.row}
             style={{
               flexWrap: "wrap",
@@ -252,29 +277,26 @@ export default function SportsPage({ }) {
         </div>
 
         {/* TODO: Utbildningar */}
-        <div id="ed" className={styles.break}></div>
-        <h1>Utbildningar</h1>
-        <div>
-          Hjärnvilja arbetar med att få företag och föreningar att sträva mot ett gemensamt mål och må bra på vägen dit. Genom samtal, inspirerande workshops och insiktsfulla övningar skapas lust, engagemang och välmående. Bättre resultat och mer energi får ni på köpet. Hjärnvilja tar sig även an enskilda individer som vill utvecklas inom sin sport eller i sitt yrkesliv.
-          <br /><br />
-          <div className={styles.text_title_centered}>
-            Lagidrott – Individuell Idrott
+        {/* <div id="ed" className={styles.break}></div> */}
+
+        {/* <div className={styles.break}></div> */}
+
+        <div id="refs" className={styles.sector}>
+          <div className={styles.hideRefs}>
+            <h1>Referenser</h1>
+            <div style={{
+              width: "100%",
+              minHeight: "300px",
+              position: "relative",
+            }}>
+              <SwiperReferences references={references} />
+            </div>
           </div>
-          <br />
-          Att vara sitt absolut bästa jag när det väl gäller är en konst. Det är många parametrar som ska stämma för att vi ska stå överst på prispallen. För att orka behöver vägen fram till prispallen kännas guldkantad och härlig. Visst kan vi slita oss fram till ett guld, men det är bättre att jobba för kroppen än emot den. Genom att synka ihop kropp och hjärna kan du som idrottare lägga fokus på rätt moment vid träning och tävling. Den mentala träningen hjälper dig/er att frigöra energi, kraft och bli ert bästa jag.
         </div>
-        <div className={styles.break}></div>
-        <div id="refs" className={styles.hideRefs}>
-          <h1>Referenser</h1>
-          <div style={{
-            width: "100%",
-            minHeight: "300px",
-            position: "relative",
-          }}>
-            <SwiperReferences references={references} />
-          </div>
-          <div id="about" className={styles.break}></div>
-        </div>
+
+        {/* <div id="about" className={styles.break}></div> */}
+
+        <div id="about" className={`${styles.sector} ${styles.sector_light}`}>
           <h1>Min idrottsresa</h1>
           <div>
             <img
@@ -324,15 +346,16 @@ export default function SportsPage({ }) {
               }}
             >Visa mindre...</div>
           }
-          <div id="form" className={styles.break}></div>
-        <FormsSection styles={styles} />
-        <div className={styles.break}></div>
-        {/* <motion.button
-          onClick={() => {
-            window.open("https://hjarnvilja.se/kursportal"); // TODO: Change to course portal
-          }}
-          whileHover={{ scale: 1.025 }}
-        >Vidare till kursportal</motion.button> */}
+        </div>
+
+        {/* <div id="form" className={styles.break}></div> */}
+        
+        <div id="form" className={styles.sector}>
+          <FormsSection styles={styles} />
+        </div>
+
+        {/* <div className={styles.break}></div> */}
+
       </div>
       <div className={styles.left}></div>
     </main>

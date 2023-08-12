@@ -5,7 +5,7 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 import { motion } from "framer-motion";
 
-function Form({styles}) {
+function Form({ styles }) {
     return (
         <div className={styles.form_container}>
             {/* Form with username and password */}
@@ -14,7 +14,7 @@ function Form({styles}) {
                     Namn:
                     <input type="text" name="name" />
                 </label>
-                
+
                 <label>
                     Företag:
                     <input type="text" name="foretag" />
@@ -46,15 +46,15 @@ function Form({styles}) {
                     Meddelande:
                     <textarea name="message" />
                 </label>
-                <motion.input 
+                <motion.input
                     whileHover={{ scale: 1.025 }}
-                type="submit" value="Skicka" />
+                    type="submit" value="Skicka" />
             </form>
         </div>
     )
 }
 
-export default function FormsSection({styles}) {
+export default function FormsSection({ styles }) {
     const description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sodales nec neque cursus sodales. Integer sit amet consectetur est. Pellentesque quis libero sapien."
     return (
         <div
@@ -64,7 +64,7 @@ export default function FormsSection({styles}) {
                 flexDirection: "column",
             }}
         >
-            <h1 style={{textAlign:"center"}}>Vill du veta mer?</h1>
+            <h1 style={{ textAlign: "center" }}>Vill du veta mer?</h1>
             <div className={styles.row}
                 style={{
                     flexWrap: "wrap",
@@ -75,11 +75,11 @@ export default function FormsSection({styles}) {
                         backgroundColor: "var(--bg-light)",
                         borderRadius: "5px",
                         padding: "10px",
-                      }}
+                    }}
                 >
                     bla bla bla... vill du veta mer? bla bla bla... funderingar, frågor... bla bla bla... hör av dig... bla bla bla... återkommer... bla bla bla...
                 </p>
-                <Form styles={styles}/>
+                <Form styles={styles} />
             </div>
         </div>
     )

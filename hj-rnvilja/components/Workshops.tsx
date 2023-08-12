@@ -6,6 +6,12 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import { motion } from "framer-motion";
 
 function WorkshopCard({styles, description, title, img, t = "foretag"}) {
+
+    const s = title == "Föreläsningar" ? {
+        borderRadius: "50%",
+        aspectRatio: "1/1",
+    } : {}
+
     return (
         <motion.div
             className={styles.card}
@@ -18,6 +24,7 @@ function WorkshopCard({styles, description, title, img, t = "foretag"}) {
             <motion.img 
                 src={img}
                 whileTap={{ scale: 0.9 }}
+                style={s}
             ></motion.img>
             <h2 style={{
                 textAlign:"center",
@@ -69,7 +76,7 @@ export default function Workshops({
                     styles={styles}
                     title="Föreläsningar"
                     description={"Hjärnviljas ledstjärna är att göra mental träning så lättillgänglig som möjligt för alla. Grundläggande övningar, verktyg och tankesätt förklaras med hjälp av enkla bilder och framförs med energi, engagemang och en gnutta humor. En föreläsning med Hjärnvilja skapar förutsättningar för att du ska kunna bli ditt bästa jag, både måendemässigt och inom det du önskar prestera i livet."}
-                    img={"/hjarnvilja/foretag/maria-forelasning.jpg"}
+                    img={"/hjarnvilja/maria-forelasning.jpg"}
                     t = {t}
                 />
             </div>
