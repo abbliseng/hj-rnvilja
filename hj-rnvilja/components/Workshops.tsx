@@ -11,7 +11,7 @@ function WorkshopCard({styles, description, title, img, t = "foretag"}) {
             className={styles.card}
             whileHover={{
                 boxShadow: "0px 0px 10px 0px var(--shadow)",
-                // outline: `5px solid var(--${t})`,
+                outline: `5px solid var(--${t})`,
                 scale: 1.025,
             }}
         >

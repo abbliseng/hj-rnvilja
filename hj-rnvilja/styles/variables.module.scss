@@ -1,3 +1,4 @@
+$bg-light: #f0eee1;
 $bg: #E7E4CE;
 $shadow: #d6d1ac;
 $shadow2: #C5BE8A;
@@ -10,6 +11,7 @@ $shop2: #F8F0F4;
 $superfriend: #73d687;
 
 :export {
+    bg-light: $bg-light;
     bg: $bg;
     shadow: $shadow;
     shadow2: $shadow2;

@@ -136,7 +136,7 @@ export default function SportsPage({ }) {
     {
       img: "/hjarnvilja/foretag/friskis.png",
       title: "Friskis & Svettis Västerås, spinning",
-      description: "Maria är en glad och entusiasmerande föreläsare som är lätt att förstå och fångade vårt intresse. Hon pratade om tankens kraft och om hur hjärnan omedvetet påverkar oss. Hur man med tankens kraft kan ta sig i stort hur långt som helst. Vi fick utöva några enkla övningar och efter dessa övningar var det inte svårt att övertyga oss om att tankens kraft verkligen fungerar.",  
+      description: "Maria är en glad och entusiasmerande föreläsare som är lätt att förstå och fångade vårt intresse. Hon pratade om tankens kraft och om hur hjärnan omedvetet påverkar oss. Hur man med tankens kraft kan ta sig i stort hur långt som helst. Vi fick utöva några enkla övningar och efter dessa övningar var det inte svårt att övertyga oss om att tankens kraft verkligen fungerar.",
     },
     {
       img: "/hjarnvilja/idrott/Sharon.jpg",
@@ -179,46 +179,26 @@ export default function SportsPage({ }) {
           <br /><br />
           Att vara sitt absolut bästa jag när det väl gäller är en konst. Många parametrar ska stämma för att vi ska hamna överst på prispallen. Att orka hela vägen fram till målet går enklare om vägen dit känns lärorik, utvecklande och guldkantad. Visst kan vi slita oss fram till ett guld, slå på oss själva och må dåligt under tiden. Men genom den mentala träningen kan vi jobba för kroppen snarare än emot den. Tillsammans arbetar vi bort låsningar, ofördelaktiga mönster, ältande tankar. Du lär dig att lägga fokus på rätt moment, hur du bibehåller din energi och vad som skapar välmående för just dig. Allt för att du ska klara av hög inre press, förväntningar utifrån och kritiska moment när det verkligen gäller.
           <br /><br />
-        </div>
-        <div>
-          <img
-            src="/hjarnvilja/maria-hoppar.jpg"
-            alt="office"
-            className={styles.inline_img}
-            style={{ float: "left", marginRight: "20px" }}
-          />
-          Det känns som att jag har lagt grunden till mitt företag redan från att jag var liten. Idrott har alltid legat mig varmt om hjärtat och även intresset av att stå på scen. Tillsammans med sista pusselbiten, fascinationen över människors beteenden, har jag under mitt liv byggt upp en grund som Hjärnvilja idag vilar på. Här får ni läsa om min resa.
-          <br /><br />
-          Idrott är något som har följt med mig sedan jag var barn. Så fort jag kunde springa lirade jag och pappa boll på gräsmattan. Sedan blev det volleyboll, fotboll, ridning – men det var inte förrän jag halkade in på kampsport som jag blev riktigt fast. Kampsporten var fascinerande på så många vis och jag gick från klarhet till klarhet. Efter Karate och Tae Kwon Do så blev det Kung Fu som jag valde att satsa på. Jag hade vunnit guld med mitt lag på karate-SM så tränaren och jag siktade högre – jag skulle ut i Europa. Men 16 h kampsport i veckan, med enbart manliga sparringpartners, slet på kroppen. Min höft började krångla.
-        </div>
-        {
-          !readmore &&
           <div
-            className={styles.readmore}
-            onClick={() => {
-              setReadmore(true);
+            style={{
+              backgroundColor: "var(--bg-light)",
+              borderRadius: "5px",
+              padding: "10px"
             }}
-          >Läs mer...</div>
-        }
-        {
-          readmore &&
-          <div>
-            Jag fick ondare och ondare och uppsökte en sjukgymnast för att få hjälp – istället gick jag därifrån med en krossad dröm. Jag var tvungen att sluta träna så hårt som jag gjorde, domen löd ”annars är risken att du inte kan gå när du är 30”. Jag var 20 år och jag hade förmodligen inte brytt mig om vad som kan hända 10 år fram om det inte vore för smärtan. Jag kunde helt enkelt inte fortsätta köra. Lång historia kort: Jag kraschade och tappade en stor del av min identitet. Men mitt i allt elände så bestämde jag mig för att ta samma beslut som jag hade tagit flera år tidigare…
-            <br /><br />
-            <div style={{ fontStyle: "italic" }}>
-              … Året var 1997, jag var 14 år gammal och var på väg till en skoldans. Som så många ungdomar i den åldern såg jag fram emot den här kvällen, klädde upp mig, fixade till mig och tänkte att jag kanske skulle hitta en trevlig pojke att dansa tryckare med ikväll. Det blev dock ingen dans, istället åkte jag hem med ett hemskt tjut i öronen som inte hade gått över nästa dag när jag vaknade. Jag blev livrädd, hade ingen aning om vad detta kunde vara för något. Dagarna gick, ljudet klingade tack och lov av och 4 veckor senare var det dags för nästa skoldans. Denna gång hade jag tur, jag fick dansa! Under låten så märkte jag hur det skar obehagligt i mitt högra öra av ljudvolymen, men självklart hade det varit alldeles för pinsamt att gå därifrån. Denna skoldans resulterade i att jag idag har tre bestående ljud i mina öron.
-              <br />
-              Jag försökte hålla modet uppe, tänkte att det går säkert över som det gjorde förra gången. Men tiden gick och flera månader senare läste jag en tidning. På mittuppslaget stod det ”Tinnitus – kroniskt öronsus” och jag kunde inte sluta läsa. Halvvägs igenom förstod jag – det kommer alltid att vara såhär! Jag blev totalt knäckt, otröstlig. Tills jag en dag nådde ett vägskäl inom mig själv: Ska jag gråta över detta resten av livet, eller ska jag göra det bästa jag kan av eländet? Jag valde det sistnämnda.
-              <br />
-              Jag startade en hemsida och fick kontakt med mängder av ungdomar med samma problem. Jag började föreläsa i ämnet och slutorden i mitt framträdande var: ”Om jag kan få en enda av er att börja använda öronproppar vid höga ljudvolymer så känns det mer värt att jag har råkat ut för detta.” Detta rullade sen på, jag medverkade i Bullen, UR, tidningar som Aftonbladet, Chilli, föreläste på Karolinska Institutet, spelade in en utbildningsfilm som användes i skolor etc.
-            </div>
-            <br /><br />
-            Så när jag låg där på soffan och tyckte synd om mig själv efter sjukgymnastens dom så tänkte jag på detta. Jag tänkte på hur jag hade vänt min tinnitus till något som blev betydelsefullt för så många och jag tog samma beslut igen.
-            <div style={{ fontWeight: "500" }}>Jag kan inte, men andra kan – och jag ska hjälpa dem dit! </div>
-            <br />
-            Jag studerade beteendevetenskap på Mälardalens högskola och kryddade denna utbildning med kurser i socialisation, genus, scenisk framställning – ja, helt enkelt allt som kunde hjälpa mig förstå människors drivkrafter och förmågor bättre. Jag fortsatte med studier i mental träning på Skandinaviska Ledarhögskolan och är nu diplomerad mental tränare. Den mentala träningen har hjälpt mig förstå och eliminera de hinder som vi sätter upp för oss själva, den har lärt mig otaliga övningar och jag ser på människor och deras kapacitet på ett helt nytt sätt efter dessa kurser. Jag fortsatte studera och tog en magister i ledarskap vilket gör att jag nu ser företagsvärlden ur nya perspektiv och kan hjälpa företag och ledare med deras utmaningar.
+          >
+            <div className={styles.list} style={{ fontWeight: "500" }}>Hjärnvilja är uppbyggt på:</div>
+            <ul>
+              <li>- En kandidatexamen i beteendevetenskap inriktning socialpsykologi</li>
+              <li>- En magisterexamen i ledarskap</li>
+              <li>- Mental träning från Skandinaviska Ledarhögskolan (Lars-Eric Uneståhl)</li>
+              <li>- Många års arbete med barn och ungdomar</li>
+              <li>- En satsning inom kampsport som fick ett abrupt slut</li>
+              <li>- 16 års erfarenhet av att föreläsa (är bland annat föreläsare hos SISU idrottsutbildarna)</li>
+              <li>- En personlighet som bidrar med glädje, energi och mod</li>
+            </ul>
           </div>
-        }
+            
+        </div>
         {/* TODO: Sponsor loggor */}
         {/* <div className={styles.break}></div> */}
         {/* <div
@@ -236,8 +216,43 @@ export default function SportsPage({ }) {
           <SponsorLogo icon={faShoppingCart} />
           <SponsorLogo icon={faHippo} />
         </div> */}
+        <div id="offers" className={styles.break}></div>
+        <Workshops styles={styles} t={"idrott"} />
+        <div id="course" className={styles.break}></div>
+        <div
+          style={{
+            backgroundColor: "var(--bg-light)",
+            borderRadius: "5px",
+          }}
+        >
+          <h1 style={{textAlign: "center"}}>Webbkurs</h1>
+          <div className={styles.row}
+            style={{
+              flexWrap: "wrap",
+            }}
+          >
+            <img
+              src="/hjarnvilja/drawn/tarta.PNG"
+              alt="tarta"
+              className={styles.inline_img_course}
+            />
+            <div className={styles.course_text}>
+              Hjärnvilja erbjuder en webbkurs i grundläggande mental träning som på ett enkelt och pedagogiskt vis skapar förståelse för hur mental träning kan användas. Kursens syfte är att genom välmående, energi och fokus lyckas få dig att prestera bättre samtidigt som vägen dit känns utvecklande och rolig.
+              <motion.button
+                whileHover={{ scale: 1.025 }} whileTap={{ scale: 0.9 }}
+                style={{
+                  marginBottom: "20px",
+                  width: "90%",
+                  alignSelf: "center",
+                  marginTop: "20px",
+                }}
+              >Shoppa kurs</motion.button>
+            </div>
+          </div>
+        </div>
+
         {/* TODO: Utbildningar */}
-        {/* <div className={styles.break}></div>
+        <div id="ed" className={styles.break}></div>
         <h1>Utbildningar</h1>
         <div>
           Hjärnvilja arbetar med att få företag och föreningar att sträva mot ett gemensamt mål och må bra på vägen dit. Genom samtal, inspirerande workshops och insiktsfulla övningar skapas lust, engagemang och välmående. Bättre resultat och mer energi får ni på köpet. Hjärnvilja tar sig även an enskilda individer som vill utvecklas inom sin sport eller i sitt yrkesliv.
@@ -247,36 +262,9 @@ export default function SportsPage({ }) {
           </div>
           <br />
           Att vara sitt absolut bästa jag när det väl gäller är en konst. Det är många parametrar som ska stämma för att vi ska stå överst på prispallen. För att orka behöver vägen fram till prispallen kännas guldkantad och härlig. Visst kan vi slita oss fram till ett guld, men det är bättre att jobba för kroppen än emot den. Genom att synka ihop kropp och hjärna kan du som idrottare lägga fokus på rätt moment vid träning och tävling. Den mentala träningen hjälper dig/er att frigöra energi, kraft och bli ert bästa jag.
-        </div> */}
-        <div className={styles.break}></div>
-        <Workshops styles={styles} t={"idrott"} />
-        <div className={styles.break}></div>
-        <h1>Webbkurs</h1>
-        <div className={styles.row}
-          style={{
-            flexWrap: "wrap",
-          }}
-        >
-          <img
-            src="/hjarnvilja/drawn/tarta.png"
-            alt="tarta"
-            className={styles.inline_img_course}
-          />
-          <div className={styles.course_text}>
-            Hjärnvilja erbjuder en webbkurs i grundläggande mental träning som på ett enkelt och pedagogiskt vis skapar förståelse för hur mental träning kan användas. Kursens syfte är att genom välmående, energi och fokus lyckas få dig att prestera bättre samtidigt som vägen dit känns utvecklande och rolig.
-            <motion.button
-              whileHover={{ scale: 1.025 }} whileTap={{ scale: 0.9 }}
-              style={{
-                marginBottom: "20px",
-                width: "90%",
-                alignSelf: "center",
-                marginTop: "20px",
-              }}
-            >Shoppa kurs</motion.button>
-          </div>
         </div>
         <div className={styles.break}></div>
-        <div className={styles.hideRefs}>
+        <div id="refs" className={styles.hideRefs}>
           <h1>Referenser</h1>
           <div style={{
             width: "100%",
@@ -285,8 +273,58 @@ export default function SportsPage({ }) {
           }}>
             <SwiperReferences references={references} />
           </div>
-          <div className={styles.break}></div>
+          <div id="about" className={styles.break}></div>
         </div>
+          <h1>Min idrottsresa</h1>
+          <div>
+            <img
+              src="/hjarnvilja/maria-hoppar.jpg"
+              alt="office"
+              className={styles.inline_img}
+              style={{ float: "left", marginRight: "20px" }}
+            />
+            Det känns som att jag har lagt grunden till mitt företag redan från att jag var liten. Idrott har alltid legat mig varmt om hjärtat och även intresset av att stå på scen. Tillsammans med sista pusselbiten, fascinationen över människors beteenden, har jag under mitt liv byggt upp en grund som Hjärnvilja idag vilar på. Här får ni läsa om min resa.
+            <br /><br />
+            Idrott är något som har följt med mig sedan jag var barn. Så fort jag kunde springa lirade jag och pappa boll på gräsmattan. Sedan blev det volleyboll, fotboll, ridning – men det var inte förrän jag halkade in på kampsport som jag blev riktigt fast. Kampsporten var fascinerande på så många vis och jag gick från klarhet till klarhet. Efter Karate och Tae Kwon Do så blev det Kung Fu som jag valde att satsa på. Jag hade vunnit guld med mitt lag på karate-SM så tränaren och jag siktade högre – jag skulle ut i Europa. Men 16 h kampsport i veckan, med enbart manliga sparringpartners, slet på kroppen. Min höft började krångla.
+          </div>
+          {
+            !readmore &&
+            <div
+              className={styles.readmore}
+              onClick={() => {
+                setReadmore(true);
+              }}
+            >Visa mer...</div>
+          }
+          {
+            readmore &&
+            <div>
+              Jag fick ondare och ondare och uppsökte en sjukgymnast för att få hjälp – istället gick jag därifrån med en krossad dröm. Jag var tvungen att sluta träna så hårt som jag gjorde, domen löd ”annars är risken att du inte kan gå när du är 30”. Jag var 20 år och jag hade förmodligen inte brytt mig om vad som kan hända 10 år fram om det inte vore för smärtan. Jag kunde helt enkelt inte fortsätta köra. Lång historia kort: Jag kraschade och tappade en stor del av min identitet. Men mitt i allt elände så bestämde jag mig för att ta samma beslut som jag hade tagit flera år tidigare…
+              <br /><br />
+              <div style={{ fontStyle: "italic" }}>
+                … Året var 1997, jag var 14 år gammal och var på väg till en skoldans. Som så många ungdomar i den åldern såg jag fram emot den här kvällen, klädde upp mig, fixade till mig och tänkte att jag kanske skulle hitta en trevlig pojke att dansa tryckare med ikväll. Det blev dock ingen dans, istället åkte jag hem med ett hemskt tjut i öronen som inte hade gått över nästa dag när jag vaknade. Jag blev livrädd, hade ingen aning om vad detta kunde vara för något. Dagarna gick, ljudet klingade tack och lov av och 4 veckor senare var det dags för nästa skoldans. Denna gång hade jag tur, jag fick dansa! Under låten så märkte jag hur det skar obehagligt i mitt högra öra av ljudvolymen, men självklart hade det varit alldeles för pinsamt att gå därifrån. Denna skoldans resulterade i att jag idag har tre bestående ljud i mina öron.
+                <br />
+                Jag försökte hålla modet uppe, tänkte att det går säkert över som det gjorde förra gången. Men tiden gick och flera månader senare läste jag en tidning. På mittuppslaget stod det ”Tinnitus – kroniskt öronsus” och jag kunde inte sluta läsa. Halvvägs igenom förstod jag – det kommer alltid att vara såhär! Jag blev totalt knäckt, otröstlig. Tills jag en dag nådde ett vägskäl inom mig själv: Ska jag gråta över detta resten av livet, eller ska jag göra det bästa jag kan av eländet? Jag valde det sistnämnda.
+                <br />
+                Jag startade en hemsida och fick kontakt med mängder av ungdomar med samma problem. Jag började föreläsa i ämnet och slutorden i mitt framträdande var: ”Om jag kan få en enda av er att börja använda öronproppar vid höga ljudvolymer så känns det mer värt att jag har råkat ut för detta.” Detta rullade sen på, jag medverkade i Bullen, UR, tidningar som Aftonbladet, Chilli, föreläste på Karolinska Institutet, spelade in en utbildningsfilm som användes i skolor etc.
+              </div>
+              <br /><br />
+              Så när jag låg där på soffan och tyckte synd om mig själv efter sjukgymnastens dom så tänkte jag på detta. Jag tänkte på hur jag hade vänt min tinnitus till något som blev betydelsefullt för så många och jag tog samma beslut igen.
+              <div style={{ fontWeight: "500" }}>Jag kan inte, men andra kan – och jag ska hjälpa dem dit! </div>
+              <br />
+              Jag studerade beteendevetenskap på Mälardalens högskola och kryddade denna utbildning med kurser i socialisation, genus, scenisk framställning – ja, helt enkelt allt som kunde hjälpa mig förstå människors drivkrafter och förmågor bättre. Jag fortsatte med studier i mental träning på Skandinaviska Ledarhögskolan och är nu diplomerad mental tränare. Den mentala träningen har hjälpt mig förstå och eliminera de hinder som vi sätter upp för oss själva, den har lärt mig otaliga övningar och jag ser på människor och deras kapacitet på ett helt nytt sätt efter dessa kurser. Jag fortsatte studera och tog en magister i ledarskap vilket gör att jag nu ser företagsvärlden ur nya perspektiv och kan hjälpa företag och ledare med deras utmaningar.
+            </div>
+          }
+          {
+            readmore &&
+            <div
+              className={styles.readmore}
+              onClick={() => {
+                setReadmore(false);
+              }}
+            >Visa mindre...</div>
+          }
+          <div id="form" className={styles.break}></div>
         <FormsSection styles={styles} />
         <div className={styles.break}></div>
         {/* <motion.button

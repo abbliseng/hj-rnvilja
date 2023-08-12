@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import '../styles/globals.scss'
 import Head from 'next/head';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -7,6 +7,87 @@ import { motion } from "framer-motion";
 import { useRouter } from 'next/router';
 import Link from 'next/link'
 import variables from '/styles/variables.module.scss'
+import ReactDOM from 'react-dom';
+
+function PageNav(sections) {
+    const [show, setShow] = useState(false);
+    const [height, setHeight] = useState("0px");
+
+    const router = useRouter()
+    const btnColor = router.pathname == "/" ? variables.$bg : "var(--" + router.pathname.substring(1) + ")"
+
+    useEffect(() => {
+        if (show) {
+            setHeight("100%");
+        } else {
+            setHeight("0px");
+        }
+    }, [show])
+
+    return (
+        <>
+            {
+                (btnColor == "var(--idrott)" || btnColor == "var(--foretag)") &&
+                <>
+                
+                    <motion.button
+                    onClick={() => setShow(!show)}
+                            className='toolbar-btn toolbar-btn-menu'
+                            style={{
+                                color: btnColor
+                            }}
+                            whileHover={{
+                                scale: 1.1,
+                            }}
+                        >
+                            <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
+                        </motion.button>
+                    <motion.div
+                        className="pageNav"
+                        animate={{ height: height }}
+                        style={{
+                            backgroundColor: btnColor
+                        }}
+                    >
+                        {
+                            sections.sections.map((section, index) => (
+                                <>
+                                    <a href={section.id}
+                                    
+                                    onClick={() => setShow(false)}
+                                    >
+                                        { section.text }
+                                    </a>
+                                    <div style={{
+                                        height: "5px",
+                                        backgroundColor: `var(--${router.pathname.substring(1)}-dark)`,
+                                        width: "100%",
+                                    }}></div>
+                                </>
+                            ))
+                        }
+                    </motion.div>
+                    <div
+                        className="pageNav2"
+                    >
+                        {
+                            sections.sections.map((section, index) => (
+                                <a 
+                                    style={{
+                                        color: btnColor
+                                    }}
+                                    href={section.id}
+                                >
+                                    { section.text }
+                                </a>
+                            ))
+                        }
+                    </div>
+                </>
+            }
+        </>
+    )
+}
 
 function MyApp({ Component, pageProps }) {
     const [isHovered, setIsHovered] = useState(false);
@@ -15,14 +96,41 @@ function MyApp({ Component, pageProps }) {
     const btnColor = router.pathname == "/" ? variables.$bg : "var(--" + router.pathname.substring(1) + ")"
     // const btnColor = "var(--bg)"
 
+    const sections = [
+        {
+            text: "Erbjudanden",
+            id: "#offers",
+        },
+        {
+            text: "Webbkurs",
+            id: "#course",
+        },
+        {
+            text: "Utbildningar",
+            id: "#ed",
+        },
+        {
+            text: "Referrenser",
+            id: "#refs",
+        },
+        {
+            text: "Min resa",
+            id: "#about",
+        },
+        {
+            text: "Funderingar?",
+            id: "#form",
+        },
+    ]
+
     return (
         <>
             <Head>
                 <title>Hjärnvilja</title>
                 <link rel="icon" href="/asteriskorange-transparent.png" />
             </Head>
-            <div className='toolbar'>
                 {router.pathname != "/" &&
+            <div className='toolbar'>
                     <Link href="/">
                         <motion.button
                             className='toolbar-btn'
@@ -42,19 +150,9 @@ function MyApp({ Component, pageProps }) {
                             }
                         </motion.button>
                     </Link>
-                }
-                {/* <motion.button
-                    className='toolbar-btn'
-                    style={{
-                        color: btnColor
-                    }}
-                    whileHover={{
-                        scale: 1.1,
-                    }}
-                >
-                    <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
-                </motion.button> */}
+                <PageNav sections={sections}/>
             </div>
+                }
             <Component {...pageProps} />
         </>
     )

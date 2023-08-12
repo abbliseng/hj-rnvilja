@@ -226,10 +226,10 @@ export default function SportsPage({ }) {
           <SponsorLogo icon={faShoppingCart} />
           <SponsorLogo icon={faHippo} />
         </div> */}
-        <div className={styles.break}></div>
+        <div id="offers" className={styles.break}></div>
         <Workshops styles={styles} t={"foretag"} />
-        <div className={styles.break}></div>
-        <h1 id="course">Webbkurs</h1>
+        <div id="course" className={styles.break}></div>
+        <h1>Webbkurs</h1>
         <div className={styles.row}
           style={{
             flexWrap: "wrap",
@@ -253,7 +253,7 @@ export default function SportsPage({ }) {
           </div>
         </div>
         {/* TODO: Utbildningar */}
-        <div className={styles.break}></div>
+        <div id="ed" className={styles.break}></div>
         <h1>Utbildningar</h1>
         <div>
           Hjärnvilja arbetar med att få företag och föreningar att sträva mot ett gemensamt mål och må bra på vägen dit. Genom samtal, inspirerande workshops och insiktsfulla övningar skapas lust, engagemang och välmående. Bättre resultat och mer energi får ni på köpet. Hjärnvilja tar sig även an enskilda individer som vill utvecklas inom sin sport eller i sitt yrkesliv.
@@ -264,9 +264,9 @@ export default function SportsPage({ }) {
           Hjärnvilja kan vara behjälplig vid en organisationsutveckling eller i en förändringsprocess. Ofta behöver detta gå hand i hand med att ledarskapet utvecklas. Hjärnvilja kan hjälpa er med att få de anställda att känna sig trygga och skapa god kommunikation och samtidigt stötta ledarna att hitta ett sätt att leda som passar både individen och företaget. Hjärnvilja bidrar med kunskap och utbildning under hela processen, skapar handlingsplaner och följer upp arbetet.
           <br />
         </div>
-        <div className={styles.break}></div>
+        <div id="refs" className={styles.break}></div>
         <div className={styles.hideRefs}>
-          <h1 id="refs">Referenser</h1>
+          <h1>Referenser</h1>
           <div style={{
             width: "100%",
             minHeight: "300px",
@@ -274,9 +274,9 @@ export default function SportsPage({ }) {
           }}>
             <SwiperReferences references={references} />
           </div>
-          <div className={styles.break}></div>
+          <div id="about" className={styles.break}></div>
         </div>
-        <h1 id="about">Min resa</h1>
+        <h1>Min resa</h1>
         <div
           style={{
             marginTop: "20px",

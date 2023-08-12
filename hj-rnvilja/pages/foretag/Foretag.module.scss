@@ -134,6 +134,8 @@
 }
 
 .left {
+    z-index: 2;
+
     margin-top: -65px;
     color: vars.$bg;
     background-color: vars.$foretag;

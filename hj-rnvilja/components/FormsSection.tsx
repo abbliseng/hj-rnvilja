@@ -70,7 +70,13 @@ export default function FormsSection({styles}) {
                     flexWrap: "wrap",
                 }}
             >
-                <p className={styles.form_container}>
+                <p className={styles.form_container}
+                    style={{
+                        backgroundColor: "var(--bg-light)",
+                        borderRadius: "5px",
+                        padding: "10px",
+                      }}
+                >
                     bla bla bla... vill du veta mer? bla bla bla... funderingar, frågor... bla bla bla... hör av dig... bla bla bla... återkommer... bla bla bla...
                 </p>
                 <Form styles={styles}/>
