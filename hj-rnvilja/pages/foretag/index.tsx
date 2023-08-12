@@ -136,7 +136,7 @@ export default function SportsPage({ }) {
     {
       img: "/hjarnvilja/foretag/friskis.png",
       title: "Friskis & Svettis Västerås, spinning",
-      description: "Maria är en glad och entusiasmerande föreläsare som är lätt att förstå och fångade vårt intresse. Hon pratade om tankens kraft och om hur hjärnan omedvetet påverkar oss. Hur man med tankens kraft kan ta sig i stort hur långt som helst. Vi fick utöva några enkla övningar och efter dessa övningar var det inte svårt att övertyga oss om att tankens kraft verkligen fungerar.",  
+      description: "Maria är en glad och entusiasmerande föreläsare som är lätt att förstå och fångade vårt intresse. Hon pratade om tankens kraft och om hur hjärnan omedvetet påverkar oss. Hur man med tankens kraft kan ta sig i stort hur långt som helst. Vi fick utöva några enkla övningar och efter dessa övningar var det inte svårt att övertyga oss om att tankens kraft verkligen fungerar.",
     },
     {
       img: "/hjarnvilja/idrott/Sharon.jpg",
@@ -160,148 +160,147 @@ export default function SportsPage({ }) {
 
   return (
     <main className={styles.container}>
+
+
+
       <div className={styles.right}>
-        {/* <h1 style={{ width: "100%", textAlign: "center" }}>Om mig - Idrott</h1> */}
-        <div className={styles.row}>
-          <div className={styles.inline_title}>
-            Hjärnvilja är synonymt med mig, Maria Nilsson, och jag önskar er hjärtligt välkomna till min hemsida!
-          </div>
-        </div>
-        <div className={styles.break}></div>
-        <div>
-          <img
-            src="/hjarnvilja/foretag/office-1.jpg"
-            alt="office"
-            className={styles.inline_img}
-            style={{ float: "right", marginLeft: "20px", marginRight: "0px" }}
-          />
-          Ledarskap är en av Hjärnviljas stora passioner och jag kommer gärna till ert företag för att inspirera, utveckla och utmana er att förändra och fördjupa ert ledarskap. Hjärnvilja erbjuder e-kurser, utbildningar, workshops samt individuell coaching av ledare. Välj från det befintliga utbudet eller skräddarsy efter era specifika behov. 
-          <br /><br />
-          Hjärnvilja kan vara behjälplig vid en organisationsutveckling eller i en förändringsprocess. Ofta behöver sådana gå hand i hand med att ledarskapet utvecklas. Hjärnvilja kan hjälpa er med att få de anställda att känna sig trygga och skapa god kommunikation och samtidigt stötta ledarna. Hjärnvilja bidrar med kunskap och utbildning under hela processen, skapar handlingsplaner och följer upp arbetet.
-          <br /><br />
-          Som ledare behöver du ofrånkomligen ta svåra beslut, skapa samsyn bland människor med olika viljor och samtidigt hålla ihop dig själv, även när det stormar som mest. I de utmaningar du ställs inför som ledare kan Hjärnvilja vara en guide och en trygg punkt att bolla sina tankegångar med.
-          <br />
-          Hjärnviljas filosofi är att skapa ledare som är trygga, insiktsfulla, nyfikna och som vet när de behövs och när de kan backa. Lika viktigt att ta tag i saker när det verkligen gäller är det att kunna ge gruppen utrymme att försöka på egen hand. Det skapar självförtroende hos medarbetarna och tillit till ledaren.
-          <br /><br />
-          <div className={styles.list} style={{fontWeight:"500"}}>Hjärnvilja är uppbyggt på:</div>
-          <ul>
-            <li>- En kandidatexamen i beteendevetenskap inriktning socialpsykologi</li>
-            <li>- En magisterexamen i ledarskap</li>
-            <li>- Mental träning från Skandinaviska Ledarhögskolan (Lars-Eric Uneståhl)</li>
-            <li>- Många års arbete med barn och ungdomar</li>
-            <li>- En satsning inom kampsport som fick ett abrupt slut</li>
-            <li>- 16 års erfarenhet av att föreläsa (är bland annat föreläsare hos SISU idrottsutbildarna)</li>
-            <li>- En personlighet som bidrar med glädje, energi och mod</li>
-          </ul>
-        </div>
-        
-        {/* TODO: Read more */}
-        {/* {
-          !readmore &&
-          <div
-            className={styles.readmore}
-            onClick={() => {
-              setReadmore(true);
-            }}
-          >Läs mer...</div>
-        }
-        {
-          readmore &&
-          <div></div>
-        } */}
-        {/* TODO: Sponsor loggor */}
-        {/* <div className={styles.break}></div> */}
-        {/* <div
-          className={styles.row}
+
+        <div id="title" className={styles.sector}
           style={{
-            // overflow: "scroll",
-            width: "100%",
-            // maxHeight: "100px",
-            justifyContent: "space-evenly",
+            paddingTop: "0px"
           }}
         >
-          <SponsorLogo icon={faImage} />
-          <SponsorLogo icon={faSpaghettiMonsterFlying} />
-          <SponsorLogo icon={faWandMagicSparkles} />
-          <SponsorLogo icon={faShoppingCart} />
-          <SponsorLogo icon={faHippo} />
-        </div> */}
-        <div id="offers" className={styles.break}></div>
-        <Workshops styles={styles} t={"foretag"} />
-        <div id="course" className={styles.break}></div>
-        <h1>Webbkurs</h1>
-        <div className={styles.row}
-          style={{
-            flexWrap: "wrap",
-          }}
-        >
-          <img
-            src="/hjarnvilja/drawn/tarta.PNG"
-            alt="tarta"
-            className={styles.inline_img_course}
-          />
-          <div className={styles.course_text}>
-            Hjärnvilja erbjuder en webbkurs i grundläggande mental träning som på ett enkelt och pedagogiskt vis skapar förståelse för hur mental träning kan användas. Kursens syfte är att genom välmående, energi och fokus lyckas få dig att prestera bättre samtidigt som vägen dit känns utvecklande och rolig.
-            <motion.button
-              whileHover={{ scale: 1.025 }} whileTap={{ scale: 0.9 }}
+          <div className={styles.row}>
+          <div className={styles.inline_title}
               style={{
-                width: "90%",
-                alignSelf: "center",
-                marginTop: "20px",
+                textAlign: "center",
+                fontSize: "1.5rem",
               }}
-            >Shoppa kurs</motion.button>
+            >
+              Hjärnvilja är synonymt med mig, Maria Nilsson, och jag önskar er hjärtligt välkomna till min hemsida!
+              <br /><br />
+            </div>
+          </div>
+          <div>
+            <img
+              src="/hjarnvilja/foretag/office-1.jpg"
+              alt="office"
+              className={styles.inline_img}
+              style={{ float: "right", marginLeft: "20px", marginRight: "0px" }}
+            />
+            Ledarskap är en av Hjärnviljas stora passioner och jag kommer gärna till ert företag för att inspirera, utveckla och utmana er att förändra och fördjupa ert ledarskap. Hjärnvilja erbjuder e-kurser, utbildningar, workshops samt individuell coaching av ledare. Välj från det befintliga utbudet eller skräddarsy efter era specifika behov.
+            <br /><br />
+            Hjärnvilja kan vara behjälplig vid en organisationsutveckling eller i en förändringsprocess. Ofta behöver sådana gå hand i hand med att ledarskapet utvecklas. Hjärnvilja kan hjälpa er med att få de anställda att känna sig trygga och skapa god kommunikation och samtidigt stötta ledarna. Hjärnvilja bidrar med kunskap och utbildning under hela processen, skapar handlingsplaner och följer upp arbetet.
+            <br /><br />
+            Som ledare behöver du ofrånkomligen ta svåra beslut, skapa samsyn bland människor med olika viljor och samtidigt hålla ihop dig själv, även när det stormar som mest. I de utmaningar du ställs inför som ledare kan Hjärnvilja vara en guide och en trygg punkt att bolla sina tankegångar med.
+            <br />
+            Hjärnviljas filosofi är att skapa ledare som är trygga, insiktsfulla, nyfikna och som vet när de behövs och när de kan backa. Lika viktigt att ta tag i saker när det verkligen gäller är det att kunna ge gruppen utrymme att försöka på egen hand. Det skapar självförtroende hos medarbetarna och tillit till ledaren.
+            <br /><br />
+            <div
+            style={{
+              backgroundColor: "var(--bg-light)",
+              borderRadius: "5px",
+              padding: "10px"
+            }}
+          >
+            <div className={styles.list} style={{ fontWeight: "500" }}>Hjärnvilja är uppbyggt på:</div>
+            <ul>
+              <li>- En kandidatexamen i beteendevetenskap inriktning socialpsykologi</li>
+              <li>- En magisterexamen i ledarskap</li>
+              <li>- Mental träning från Skandinaviska Ledarhögskolan (Lars-Eric Uneståhl)</li>
+              <li>- Många års arbete med barn och ungdomar</li>
+              <li>- En satsning inom kampsport som fick ett abrupt slut</li>
+              <li>- 24 års erfarenhet av att föreläsa (är bland annat föreläsare hos SISU idrottsutbildarna)</li>
+              <li>- En personlighet som bidrar med glädje, energi och mod</li>
+            </ul>
+          </div>
           </div>
         </div>
-        {/* TODO: Utbildningar */}
-        <div id="ed" className={styles.break}></div>
-        <h1>Utbildningar</h1>
-        <div>
-          Hjärnvilja arbetar med att få företag och föreningar att sträva mot ett gemensamt mål och må bra på vägen dit. Genom samtal, inspirerande workshops och insiktsfulla övningar skapas lust, engagemang och välmående. Bättre resultat och mer energi får ni på köpet. Hjärnvilja tar sig även an enskilda individer som vill utvecklas inom sin sport eller i sitt yrkesliv.
-          <br /><br />
-          <div className={styles.text_title_centered}>
-          Ledarskap – Organisationsutveckling
+
+        <div id="ed" className={`${styles.sector} ${styles.sector_light}`}>
+          {/* TODO: Utbildningar */}
+          <h1>Utbildningar</h1>
+          <div>
+            Hjärnvilja arbetar med att få företag och föreningar att sträva mot ett gemensamt mål och må bra på vägen dit. Genom samtal, inspirerande workshops och insiktsfulla övningar skapas lust, engagemang och välmående. Bättre resultat och mer energi får ni på köpet. Hjärnvilja tar sig även an enskilda individer som vill utvecklas inom sin sport eller i sitt yrkesliv.
+            <br /><br />
+            <div className={styles.text_title_centered}>
+              Ledarskap – Organisationsutveckling
+            </div>
+            Hjärnvilja kan vara behjälplig vid en organisationsutveckling eller i en förändringsprocess. Ofta behöver detta gå hand i hand med att ledarskapet utvecklas. Hjärnvilja kan hjälpa er med att få de anställda att känna sig trygga och skapa god kommunikation och samtidigt stötta ledarna att hitta ett sätt att leda som passar både individen och företaget. Hjärnvilja bidrar med kunskap och utbildning under hela processen, skapar handlingsplaner och följer upp arbetet.
+            <br />
           </div>
-          Hjärnvilja kan vara behjälplig vid en organisationsutveckling eller i en förändringsprocess. Ofta behöver detta gå hand i hand med att ledarskapet utvecklas. Hjärnvilja kan hjälpa er med att få de anställda att känna sig trygga och skapa god kommunikation och samtidigt stötta ledarna att hitta ett sätt att leda som passar både individen och företaget. Hjärnvilja bidrar med kunskap och utbildning under hela processen, skapar handlingsplaner och följer upp arbetet.
-          <br />
         </div>
-        <div id="refs" className={styles.break}></div>
-        <div className={styles.hideRefs}>
-          <h1>Referenser</h1>
-          <div style={{
-            width: "100%",
-            minHeight: "300px",
-            position: "relative",
-          }}>
-            <SwiperReferences references={references} />
-          </div>
-          <div id="about" className={styles.break}></div>
+
+        <div id="offers" className={styles.sector}>
+          <Workshops styles={styles} t={"foretag"} />
         </div>
-        <h1>Min resa</h1>
+
         <div
-          style={{
-            marginTop: "20px",
-          }}>
-          <img
-            src="/hjarnvilja/maria-vid-vattnet.jpg"
-            alt="office"
-            className={styles.inline_img}
-            style={{ float: "left", marginRight: "20px" }}
-          />
-          Genom livet har jag haft flera ledarroller. De flesta har jag bara råkat hamna i, som när jag fick möjlighet att leda en barnkör i mina tonår eller som när en spinningledare kom fram till mig efter ett pass och frågade ”Ska inte du bli ledare, du ser ut att tycka att detta är jättekul!”, sagt och gjort, 2010 blev jag spinningledare på Friskis&Svettis. Jag är beteendevetare och har en magister i ledarskap, jag håller i idrottsledarutbildningar i RF-SISUs regi, jag har utbildat många företagsledare och deras medarbetare i ledarskap. Gör detta mig till en bättre ledare tror ni? Till min förvåning svarar många människor nej på den frågan. Många tror med andra ord att ledarskap är något medfött. Detta ställer till det på två sätt (LÄS MER...), det ena är att många människor som skulle bli fantastiska ledare inte vågar ta steget och det andra är att flera personer som redan ser sig som ledare inte väljer att utvecklas i sin roll. Jag vill att alla ska se sin potential och utvecklas. Jag tror att vi alla i viss mån leder andra, vi alla är någons förebild, och kan vi ställa oss ödmjuka inför det faktum att det alltid finns mer att lära så kommer vi så fantastiskt mycket längre.  
-          <br /><br />
-          Dock är det inte något slutgiltigt mål för mig att alla ska bli ledare. Det är inte finare att vara ledare än att vara medarbetare och jag förstår de människor som inte har någon önskan att leda andra. Men något jag tror att alla människor mår bra av är att få förståelse för begreppet självledarskap och hur jag genom detta kan utvecklas. Att kunna leda sig själv ger både välmående, större förståelse för andra, tydligare gränssättning i mitt liv och en riktning när allt tycks stå stilla. Det gör också att vi blir ännu bättre förebilder för våra medmänniskor.  
-          <br /><br />
-          Att vara ledare är, enligt min ledarskapsfilosofi, att våga se sig själv – se det jag inte tycker om hos mig själv, det som inte faller rätt hos andra och göra något åt det. Likväl som att jag behöver se det som jag gör bra, vara stolt över det och ödmjukt hjälpa andra när de önskar. Min fasta övertygelse är att utbildning är A och O för att bli en bra ledare. En bra ledare blir aldrig färdig. En ledare kan ständigt utvecklas och bör ständigt utvecklas vilket ska ses som ett privilegium – det blir aldrig tråkigt att vara ledare. 
+          id="course"
+          className={`${styles.sector} ${styles.sector_light}`}
+        >
+          <h1>Webbkurs</h1>
+          <div className={styles.row}
+            style={{
+              flexWrap: "wrap",
+            }}
+          >
+            <img
+              src="/hjarnvilja/drawn/tarta.PNG"
+              alt="tarta"
+              className={styles.inline_img_course}
+            />
+            <div className={styles.course_text}>
+              Hjärnvilja erbjuder en webbkurs i grundläggande mental träning som på ett enkelt och pedagogiskt vis skapar förståelse för hur mental träning kan användas. Kursens syfte är att genom välmående, energi och fokus lyckas få dig att prestera bättre samtidigt som vägen dit känns utvecklande och rolig.
+              <motion.button
+                whileHover={{ scale: 1.025 }} whileTap={{ scale: 0.9 }}
+                style={{
+                  width: "90%",
+                  alignSelf: "center",
+                  marginTop: "20px",
+                }}
+              >Shoppa kurs</motion.button>
+            </div>
+          </div>
         </div>
-        <div id="form" className={styles.break}></div>
-        <FormsSection styles={styles}/>
-        <div className={styles.break}></div>
-        {/* <motion.button
-          onClick={() => {
-            window.open("https://hjarnvilja.se/kursportal"); // TODO: Change to course portal
-          }}
-          whileHover={{ scale: 1.025 }}
-        >Vidare till kursportal</motion.button> */}
+
+        <div id="refs" className={styles.sector}>
+          <div className={styles.hideRefs}>
+            <h1>Referenser</h1>
+            <div style={{
+              width: "100%",
+              minHeight: "300px",
+              position: "relative",
+            }}>
+              <SwiperReferences references={references} />
+            </div>
+          </div>
+        </div>
+
+        <div id="about" className={`${styles.sector} ${styles.sector_light}`}>
+          <h1>Min resa</h1>
+          <div
+            style={{
+              marginTop: "20px",
+            }}>
+            <img
+              src="/hjarnvilja/maria-vid-vattnet.jpg"
+              alt="office"
+              className={styles.inline_img}
+              style={{ float: "left", marginRight: "20px" }}
+            />
+            Genom livet har jag haft flera ledarroller. De flesta har jag bara råkat hamna i, som när jag fick möjlighet att leda en barnkör i mina tonår eller som när en spinningledare kom fram till mig efter ett pass och frågade ”Ska inte du bli ledare, du ser ut att tycka att detta är jättekul!”, sagt och gjort, 2010 blev jag spinningledare på Friskis&Svettis. Jag är beteendevetare och har en magister i ledarskap, jag håller i idrottsledarutbildningar i RF-SISUs regi, jag har utbildat många företagsledare och deras medarbetare i ledarskap. Gör detta mig till en bättre ledare tror ni? Till min förvåning svarar många människor nej på den frågan. Många tror med andra ord att ledarskap är något medfött. Detta ställer till det på två sätt (LÄS MER...), det ena är att många människor som skulle bli fantastiska ledare inte vågar ta steget och det andra är att flera personer som redan ser sig som ledare inte väljer att utvecklas i sin roll. Jag vill att alla ska se sin potential och utvecklas. Jag tror att vi alla i viss mån leder andra, vi alla är någons förebild, och kan vi ställa oss ödmjuka inför det faktum att det alltid finns mer att lära så kommer vi så fantastiskt mycket längre.
+            <br /><br />
+            Dock är det inte något slutgiltigt mål för mig att alla ska bli ledare. Det är inte finare att vara ledare än att vara medarbetare och jag förstår de människor som inte har någon önskan att leda andra. Men något jag tror att alla människor mår bra av är att få förståelse för begreppet självledarskap och hur jag genom detta kan utvecklas. Att kunna leda sig själv ger både välmående, större förståelse för andra, tydligare gränssättning i mitt liv och en riktning när allt tycks stå stilla. Det gör också att vi blir ännu bättre förebilder för våra medmänniskor.
+            <br /><br />
+            Att vara ledare är, enligt min ledarskapsfilosofi, att våga se sig själv – se det jag inte tycker om hos mig själv, det som inte faller rätt hos andra och göra något åt det. Likväl som att jag behöver se det som jag gör bra, vara stolt över det och ödmjukt hjälpa andra när de önskar. Min fasta övertygelse är att utbildning är A och O för att bli en bra ledare. En bra ledare blir aldrig färdig. En ledare kan ständigt utvecklas och bör ständigt utvecklas vilket ska ses som ett privilegium – det blir aldrig tråkigt att vara ledare.
+          </div>
+        </div>
+
+        <div id="form" className={styles.sector}>
+          <FormsSection styles={styles} />
+        </div>
+
       </div>
       <div className={styles.left}></div>
     </main>

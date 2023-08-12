@@ -281,7 +281,7 @@ export default function SportsPage({ }) {
 
         {/* <div className={styles.break}></div> */}
 
-        <div id="refs" className={styles.sector}>
+        <div id="refs" className={`${styles.sector}`}>
           <div className={styles.hideRefs}>
             <h1>Referenser</h1>
             <div style={{
