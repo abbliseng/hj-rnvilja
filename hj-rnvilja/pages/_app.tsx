@@ -98,11 +98,11 @@ function MyApp({ Component, pageProps }) {
 
     const sections = [
         {
-            text: "Utbildningar",
+            text: "Meriter",
             id: "#ed",
         },
         {
-            text: "Erbjudanden",
+            text: "Tjänster",
             id: "#offers",
         },
         {
@@ -110,7 +110,7 @@ function MyApp({ Component, pageProps }) {
             id: "#course",
         },
         {
-            text: "Referrenser",
+            text: "Referenser",
             id: "#refs",
         },
         {

@@ -4,9 +4,15 @@
     width: 100%;
     height: 100%;
 
+    margin-top: 60px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    > h1 {
+        color: var(--shop)
+    }
 }
 
 .button {
@@ -42,6 +48,8 @@
 }
 
 .productCard {
+
+    cursor: pointer;
     min-width: 300px;
     height: 400px;
     margin: 10px;
@@ -51,9 +59,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    // justify-content: space-between;
 
-    border: 5px solid vars.$shop;
+    padding: 5px;
+
+    color: var(--bg);
+
+    // border: 5px solid vars.$shop;
 
     border-radius: 15px;
+}
+
+.centerAlign {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

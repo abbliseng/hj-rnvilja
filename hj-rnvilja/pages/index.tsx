@@ -17,9 +17,9 @@ export default function Home() {
           <Center />
         </div>
         <SportsSection/>
-      <div className='overlay'>
+      {/* <div className='overlay'>
         <ShopButton />
-      </div>
+      </div> */}
       </div>
       <div className={styles.container_2}>
         <Center />

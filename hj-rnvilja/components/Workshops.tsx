@@ -5,7 +5,7 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 import { motion } from "framer-motion";
 
-function WorkshopCard({styles, description, title, img, t = "foretag"}) {
+function WorkshopCard({styles, description, title, img, t = "foretag", url="https://www.google.com"}) {
 
     const s = title == "Föreläsningar" ? {
         borderRadius: "50%",
@@ -33,7 +33,9 @@ function WorkshopCard({styles, description, title, img, t = "foretag"}) {
             }}>{title}</h2>
             <hr/>
             <p style={{paddingBottom: "15px"}}>{description}</p>
-            <motion.button whileHover={{ scale: 1.025 }} whileTap={{ scale: 0.9 }}>Boka här!</motion.button>
+            {/* <motion.button whileHover={{ scale: 1.025 }} whileTap={{ scale: 0.9 }}
+                onClick={() => window.open(url)}
+            >Boka här!</motion.button> */}
         </motion.div>
     )
 }
@@ -44,6 +46,14 @@ export default function Workshops({
 }) {
     const description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sodales nec neque cursus sodales. Integer sit amet consectetur est. Pellentesque quis libero sapien."
     const img_src = t === "foretag" ? "/hjarnvilja/stjarna-cyan.png" : "/hjarnvilja/stjarna-orange.png"
+    const foretag_links = [
+        "https://hjarnvilja.thrivecart.com/ledarskap-grundkurs/",
+    ]
+    const idrott_links = [
+        "https://hjarnvilja.thrivecart.com/mental-traning-grundkurs/",
+    ]
+    const tarta_link = t === "foretag" ? foretag_links[0] : idrott_links[0]
+    
     return (
         <motion.div style={{
             width: "100%",
@@ -52,7 +62,7 @@ export default function Workshops({
             alignItems: "center",
         }}
         >
-            <h1>Erbjudanden</h1>
+            <h1>Tjänster</h1>
             <div className={styles.row}
                 style={{
                     flexWrap: "wrap",
@@ -61,7 +71,7 @@ export default function Workshops({
                 <WorkshopCard
                     styles={styles}
                     title="Workshop - Citronen"
-                    description={"I denna workshop får vi chanson att möta våra känslor och ser om vi använder dessa på ett uppbyggande vis. Vad händer i laget när det går dåligt? Hur pratar vi med och om varandra inför och under ett tävlingstillfälle. Hur låter jag mina känslor påverka andra runt mig? Ofta kommer negativa känslor fram om vi verkligen vill vinna men ser chansen försvinna ifrån oss, skulle vi kunna hitta en kommunikation som gör oss starkare och ökar våra chanser att vända den nedåtgående spiralen?"}
+                    description={"I denna workshop får vi chansen att möta våra känslor och ser om vi använder dessa på ett uppbyggande vis. Vad händer i laget när det går dåligt? Hur pratar vi med och om varandra inför och under ett tävlingstillfälle. Hur låter jag mina känslor påverka andra runt mig? Ofta kommer negativa känslor fram om vi verkligen vill vinna men ser chansen försvinna ifrån oss, skulle vi kunna hitta en kommunikation som gör oss starkare och ökar våra chanser att vända den nedåtgående spiralen?"}
                     img={"/hjarnvilja/drawn/citron.png"}
                     t = {t}
                 />
@@ -76,7 +86,7 @@ export default function Workshops({
                     styles={styles}
                     title="Föreläsningar"
                     description={"Hjärnviljas ledstjärna är att göra mental träning så lättillgänglig som möjligt för alla. Grundläggande övningar, verktyg och tankesätt förklaras med hjälp av enkla bilder och framförs med energi, engagemang och en gnutta humor. En föreläsning med Hjärnvilja skapar förutsättningar för att du ska kunna bli ditt bästa jag, både måendemässigt och inom det du önskar prestera i livet."}
-                    img={"/hjarnvilja/maria-forelasning.jpg"}
+                    img={"/forelas.jpg"}
                     t = {t}
                 />
             </div>

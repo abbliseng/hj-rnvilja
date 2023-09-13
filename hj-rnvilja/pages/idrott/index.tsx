@@ -121,7 +121,7 @@ export default function SportsPage({ }) {
       description: "Mental coaching med Maria har förändrat min syn på mig själv, min sport och mitt sätt att utöva den. Jag har lärt mig att ta kontroll över situationer jag förut inte kunde handskas med, exempelvis nervositet, stress och mitt humör. Maria har fått mig att förstå vad som har legat till grund för de blockeringar jag tidigare fått inför och på tävlingar och lärt mig hur jag ska gå till väga för häva dessa. Vi har tillsammans kommit fram till vad mitt syfte med golfen är, och arbetat med målsättningar som är anpassade just för mig. Jag upplever att jag har växt som människa och som idrottare både på det mentala och fysiska planet. Nu längtar jag bara till nästa säsong och ser fram emot ett långt samarbete med Maria!",
     },
     {
-      img: "",
+      img: "/hjarnvilja/stjarna-orange-p30bg.png",
       title: "Anders Block – HLR-instruktör",
       description: "Som instruktör av HLR möter man alla typer av människor; de som redan kan, de som har svårare att lära in, de som varit med om HLR på en kamrat, flamsiga grupper och allvarliga grupper. Maria har fått mig att känna mig trygg i det jag gör och på så vis får jag hög och jämn kvalitet på mina utbildningar. Jag har även fått hjälp med att hantera nervositet inför en utbildning. Så till dig som vill nå ut med ditt budskap inför en grupp människor kan jag verkligen rekommendera Maria på Hjärnvilja!",
     },
@@ -148,11 +148,6 @@ export default function SportsPage({ }) {
       title: "VGF",
       description: "Vi har tränat hårt men alltid hamnat precis utanför pallen. Marias mentala träning har hjälpt tjejerna att prestera det där lilla extra som krävdes för att vi skulle ta brons på Svenska Cupen 2010.",
     },
-    {
-      img: "/hjarnvilja/foretag/Winnet.jpg",
-      title: "Winnet",
-      description: "Tack Maria för att du på ett mycket inspirerande, proffsigt, lustfyllt och handgripligt (!) sätt fick oss att ta fram den mentala styrkan inom oss. Du fick mig att inse vikten av att vara sams med mig själv, att ledarskap handlar om så mycket mer än att peka med hela handen.",
-    }
   ]
 
   const [readmore, setReadmore] = useState(false);
@@ -161,65 +156,70 @@ export default function SportsPage({ }) {
   return (
     <main className={styles.container}>
       <div className={styles.right}>
+      <div id="title" className={styles.sector_wow}>
+        <img
+            src="/hjarnvilja/idrott/Maria-1.jpg"
+            alt="office"
+            style={{ float: "right", marginLeft: "20px", marginRight: "0px" }}
+          />
+          <div className={styles.title_wow}>
+            Hjärnvilja är synonymt med mig, Maria Nilsson.
+            < br/>
+            Hjärtligt välkomna till min hemsida!
+          </div>
+      </div>
 
         <div id="title" className={styles.sector}
           style={{
-            paddingTop: "0px"
+            paddingTop: "0px",
+            textAlign: "justify",
           }}
         >
           <div className={styles.row}>
-            <div className={styles.inline_title}
-              style={{
-                textAlign: "center",
-                fontSize: "1.5rem",
-              }}
-            >
-              Hjärnvilja är synonymt med mig, Maria Nilsson, och jag önskar er hjärtligt välkomna till min hemsida!
-              <br /><br />
-            </div>
+            <h1 className={styles.text_title_centered}>
+              <br />
+              Mental Träning för Lagidrott & Individuell Idrott
+            </h1>
           </div>
-
-          <img
-            src="/hjarnvilja/foretag/office-1.jpg"
-            alt="office"
-            className={styles.inline_img}
-            style={{ float: "right", marginLeft: "20px", marginRight: "0px" }}
-          />
+          <br /><br />
           Min förälskelse till den mentala träningen gjorde att jag vågade starta Hjärnvilja 2009 och sen dess har det varit ett ständigt sökande efter nya rön och metoder. Att kunna guida människor till prestationer de inte själva trodde var möjliga är en oslagbar känsla. Hjärnviljas ledstjärna är att hela tiden göra detta fascinerande område så lättillgängligt som möjligt för andra, jag lägger därför stor vikt vid att skapa enkla bilder och övningar som gör mental träning lätt att förstå och ta till sig.
           <br /><br />
           Att vara sitt absolut bästa jag när det väl gäller är en konst. Många parametrar ska stämma för att vi ska hamna överst på prispallen. Att orka hela vägen fram till målet går enklare om vägen dit känns lärorik, utvecklande och guldkantad. Visst kan vi slita oss fram till ett guld, slå på oss själva och må dåligt under tiden. Men genom den mentala träningen kan vi jobba för kroppen snarare än emot den. Tillsammans arbetar vi bort låsningar, ofördelaktiga mönster, ältande tankar. Du lär dig att lägga fokus på rätt moment, hur du bibehåller din energi och vad som skapar välmående för just dig. Allt för att du ska klara av hög inre press, förväntningar utifrån och kritiska moment när det verkligen gäller.
           <br /><br />
-          <div
+          {/* <div
             style={{
               backgroundColor: "var(--bg-light)",
               borderRadius: "5px",
               padding: "10px"
             }}
           >
-            <div className={styles.list} style={{ fontWeight: "500" }}>Hjärnvilja är uppbyggt på:</div>
+            <div className={styles.list} style={{ fontWeight: "500", fontFamily: "Oswald", fontSize:"1.2rem" }}>Hjärnvilja är uppbyggt på:</div>
+            
+          </div> */}
+        </div>
+
+        
+        
+        <div id="ed" className={`${styles.sector} ${styles.sector_light}`}
+          style={{
+            backgroundColor: "var(--idrott-light)",
+          }}
+        >
+          <div>
+            <h1 className={styles.text_title_centered}>
+            Hjärnvilja är uppbyggt på
+            </h1>
+            <br />
             <ul>
               <li>- En kandidatexamen i beteendevetenskap inriktning socialpsykologi</li>
               <li>- En magisterexamen i ledarskap</li>
               <li>- Mental träning från Skandinaviska Ledarhögskolan (Lars-Eric Uneståhl)</li>
               <li>- Många års arbete med barn och ungdomar</li>
               <li>- En satsning inom kampsport som fick ett abrupt slut</li>
-              <li>- 24 års erfarenhet av att föreläsa (är bland annat föreläsare hos SISU idrottsutbildarna)</li>
+              <li>- 24 års erfarenhet av att föreläsa</li>
+              <li>- Extern utbildare hos RF-SISU Västmanland</li>
               <li>- En personlighet som bidrar med glädje, energi och mod</li>
             </ul>
-          </div>
-        </div>
-
-        
-        <div id="ed" className={`${styles.sector} ${styles.sector_light}`}>
-          <h1>Utbildningar</h1>
-          <div>
-            Hjärnvilja arbetar med att få företag och föreningar att sträva mot ett gemensamt mål och må bra på vägen dit. Genom samtal, inspirerande workshops och insiktsfulla övningar skapas lust, engagemang och välmående. Bättre resultat och mer energi får ni på köpet. Hjärnvilja tar sig även an enskilda individer som vill utvecklas inom sin sport eller i sitt yrkesliv.
-            <br /><br />
-            <div className={styles.text_title_centered}>
-              Lagidrott – Individuell Idrott
-            </div>
-            <br />
-            Att vara sitt absolut bästa jag när det väl gäller är en konst. Det är många parametrar som ska stämma för att vi ska stå överst på prispallen. För att orka behöver vägen fram till prispallen kännas guldkantad och härlig. Visst kan vi slita oss fram till ett guld, men det är bättre att jobba för kroppen än emot den. Genom att synka ihop kropp och hjärna kan du som idrottare lägga fokus på rätt moment vid träning och tävling. Den mentala träningen hjälper dig/er att frigöra energi, kraft och bli ert bästa jag.
           </div>
         </div>
 
@@ -244,21 +244,20 @@ export default function SportsPage({ }) {
         <div id="offers" className={styles.sector}>
           <Workshops styles={styles} t={"idrott"} />
         </div>
-        {/* <div id="course" className={styles.break}></div> */}
 
         <div
           id="course"
           className={`${styles.sector} ${styles.sector_light}`}
         >
-          <h1 style={{ textAlign: "center" }}>Webbkurs</h1>
+          <h1>Webbkurs</h1>
           <div className={styles.row}
             style={{
               flexWrap: "wrap",
             }}
           >
             <img
-              src="/hjarnvilja/drawn/tarta.PNG"
-              alt="tarta"
+              src="/tarta12.png"
+              alt="tarta1"
               className={styles.inline_img_course}
             />
             <div className={styles.course_text}>
@@ -266,15 +265,18 @@ export default function SportsPage({ }) {
               <motion.button
                 whileHover={{ scale: 1.025 }} whileTap={{ scale: 0.9 }}
                 style={{
-                  marginBottom: "20px",
                   width: "90%",
                   alignSelf: "center",
                   marginTop: "20px",
                 }}
+                onClick={() => window.open("https://hjarnvilja.thrivecart.com/mental-traning-grundkurs/")}
               >Shoppa kurs</motion.button>
             </div>
           </div>
         </div>
+
+        
+        {/* <div id="course" className={styles.break}></div> */}
 
         {/* TODO: Utbildningar */}
         {/* <div id="ed" className={styles.break}></div> */}
@@ -298,14 +300,18 @@ export default function SportsPage({ }) {
 
         <div id="about" className={`${styles.sector} ${styles.sector_light}`}>
           <h1>Min idrottsresa</h1>
-          <div>
+          <div
+            style={{
+              textAlign: "justify",
+            }}
+          >
             <img
               src="/hjarnvilja/maria-hoppar.jpg"
               alt="office"
-              className={styles.inline_img}
-              style={{ float: "left", marginRight: "20px" }}
+              // className={styles.inline_img}
+              style={{ float: "left", marginRight: "20px", aspectRatio: "16/9", objectFit: "cover", marginBottom: "20px", borderRadius: "5px" }}
             />
-            Det känns som att jag har lagt grunden till mitt företag redan från att jag var liten. Idrott har alltid legat mig varmt om hjärtat och även intresset av att stå på scen. Tillsammans med sista pusselbiten, fascinationen över människors beteenden, har jag under mitt liv byggt upp en grund som Hjärnvilja idag vilar på. Här får ni läsa om min resa.
+            Det känns som att jag har lagt grunden till mitt företag redan från att jag var liten. Idrott har alltid legat mig varmt om hjärtat och även intresset av att stå på scen. Tillsammans med sista pusselbiten, fascinationen över människors beteenden, har jag under mitt liv byggt upp en grund som Hjärnvilja idag vilar på. Här får ni läsa om min resa.
             <br /><br />
             Idrott är något som har följt med mig sedan jag var barn. Så fort jag kunde springa lirade jag och pappa boll på gräsmattan. Sedan blev det volleyboll, fotboll, ridning – men det var inte förrän jag halkade in på kampsport som jag blev riktigt fast. Kampsporten var fascinerande på så många vis och jag gick från klarhet till klarhet. Efter Karate och Tae Kwon Do så blev det Kung Fu som jag valde att satsa på. Jag hade vunnit guld med mitt lag på karate-SM så tränaren och jag siktade högre – jag skulle ut i Europa. Men 16 h kampsport i veckan, med enbart manliga sparringpartners, slet på kroppen. Min höft började krångla.
           </div>

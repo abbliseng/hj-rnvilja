@@ -21,7 +21,7 @@ export default function Center() {
                         className={styles.logo}
                     />
                 </div>
-                <div className={styles.arrows}>
+                {/* <div className={styles.arrows}>
                     <motion.img
                         className={styles.orange_1}
                         src="/hjarnvilja/arrows/orange-arrow-1.png"
@@ -51,7 +51,7 @@ export default function Center() {
                         src="/hjarnvilja/arrows/magenta-arrow-1.png"
                     />
                     <span className={styles.magenta_1_span}>Shoppingsugen?</span>
-                </div>
+                </div> */}
             </div>
         </>
     )

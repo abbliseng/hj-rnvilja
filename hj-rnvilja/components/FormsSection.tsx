@@ -74,10 +74,10 @@ export default function FormsSection({ styles }) {
                     style={{
                         backgroundColor: "var(--bg-light)",
                         borderRadius: "5px",
-                        padding: "10px",
+                        padding: "15px",
                     }}
                 >
-                    bla bla bla... vill du veta mer? bla bla bla... funderingar, frågor... bla bla bla... hör av dig... bla bla bla... återkommer... bla bla bla...
+                    Hör gärna av dig till mig om du har några frågor om mina tjänster. Om du är företagare och önskar en offert så kan du antingen specificera dina önskemål i meddelanderutan eller lämna telenummer/e-mail så hör jag av mig så fort jag kan!
                 </p>
                 <Form styles={styles} />
             </div>

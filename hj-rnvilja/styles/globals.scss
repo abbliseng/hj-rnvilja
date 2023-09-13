@@ -31,8 +31,10 @@
   --bg: #e7e4ce;
   --shadow: #d6d1ac;
   --shadow2: #c5be8a;
+  --idrott-light: #e8a45b;
   --idrott: #e18727;
   --idrott-dark: #c36603;
+  --foretag-light: #42d5f5;
   --foretag: #00aacf;
   --foretag-dark: #089cbd;
   --shop: #ed0c6e;
@@ -137,7 +139,7 @@ button {
   display: flex;
   flex-direction: row;
   // justify-content: flex-end;
-  // align-items: center;
+  align-items: center;
 
   pointer-events: none;
 }
@@ -145,7 +147,7 @@ button {
 .toolbar-btn {
   // flex-basis: 10%;
   width: 50px;
-  height: 50px;
+  height: 100%;
 
   margin: 5px;
   border-radius: 10px;
@@ -225,9 +227,7 @@ button {
     pointer-events: all;
     height: 100%;
   
-    // display: flex;
-
-    padding-bottom: 12px;
+    display: flex;
 
     flex-direction: row;
     align-items: center;
@@ -237,7 +237,6 @@ button {
   
   
   a {
-    // background-color: vars.$bg;
     border-radius: 5px;
     padding: 2px;
     margin-left: 10px;

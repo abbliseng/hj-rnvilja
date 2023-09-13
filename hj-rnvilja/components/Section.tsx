@@ -55,7 +55,7 @@ function SportsSection() {
     const content = (
         <>
             <h3 style={{textAlign:"center"}}>
-                Lagidrott – Individuell Idrott
+                Mental Träning
             </h3>
             {/* Att vara sitt absolut bästa jag när det väl gäller är en konst. Det är många parametrar som ska stämma för att vi ska stå överst på prispallen. För att orka behöver vägen fram till prispallen kännas guldkantad och härlig. Visst kan vi slita oss fram till ett guld, men det är bättre att jobba för kroppen än emot den. Genom att synka ihop kropp och hjärna kan du som idrottare lägga fokus på rätt moment vid träning och tävling. Den mentala träningen hjälper dig/er att frigöra energi, kraft och bli ert bästa jag. */}
             <h4 style={{fontStyle:"italic", textAlign:"center", fontWeight:"400"}}>
