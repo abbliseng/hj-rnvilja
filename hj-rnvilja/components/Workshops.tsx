@@ -33,9 +33,12 @@ function WorkshopCard({styles, description, title, img, t = "foretag", url="http
             }}>{title}</h2>
             <hr/>
             <p style={{paddingBottom: "15px"}}>{description}</p>
-            {/* <motion.button whileHover={{ scale: 1.025 }} whileTap={{ scale: 0.9 }}
-                onClick={() => window.open(url)}
-            >Boka här!</motion.button> */}
+            <motion.button whileHover={{ scale: 1.025 }} whileTap={{ scale: 0.9 }}
+                onClick={() => {
+                    // scroll to bottom of page
+                    window.scrollTo(0,document.body.scrollHeight);
+                }}
+            >Boka!</motion.button>
         </motion.div>
     )
 }

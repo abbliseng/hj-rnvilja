@@ -162,11 +162,11 @@ export default function SportsPage({ }) {
             alt="office"
             style={{ float: "right", marginLeft: "20px", marginRight: "0px" }}
           />
-          <div className={styles.title_wow}>
+          {/* <div className={styles.title_wow}>
             Hjärnvilja är synonymt med mig, Maria Nilsson.
             < br/>
             Hjärtligt välkomna till min hemsida!
-          </div>
+          </div> */}
       </div>
 
         <div id="title" className={styles.sector}
@@ -202,7 +202,8 @@ export default function SportsPage({ }) {
         
         <div id="ed" className={`${styles.sector} ${styles.sector_light}`}
           style={{
-            backgroundColor: "var(--idrott-light)",
+            backgroundColor: "var(--idrott)",
+            color: "var(--bg-light)",
           }}
         >
           <div>
@@ -362,8 +363,24 @@ export default function SportsPage({ }) {
 
         {/* <div className={styles.break}></div> */}
 
+        {/* Display the image logo */}
+        <div className={styles.row}
+          style={{
+            justifyContent: "center",
+          }}
+        >
+          <img
+            src="/hjarnvilja/stjarna-orange.png"
+            alt="logo"
+            className={styles.logo}
+            style={{
+              scale: "0.5",
+            }}
+          />
+        </div>
+
       </div>
-      <div className={styles.left}></div>
+      {/* <div className={styles.left}></div> */}
     </main>
   );
 }

@@ -64,22 +64,64 @@ export default function FormsSection({ styles }) {
                 flexDirection: "column",
             }}
         >
-            <h1 style={{ textAlign: "center" }}>Vill du veta mer?</h1>
+            <h1 style={{ textAlign: "center" }}>Vill du veta mer eller boka något?</h1>
             <div className={styles.row}
                 style={{
                     flexWrap: "wrap",
                 }}
             >
-                <p className={styles.form_container}
+                {/* <p 
+                    // className={styles.form_container}
                     style={{
                         backgroundColor: "var(--bg-light)",
                         borderRadius: "5px",
                         padding: "15px",
+                        marginBottom: "15px",
+                        maxWidth: "1000px",
+                        width: "100%",
+                        // make text selectable
+                        userSelect: "text",
                     }}
                 >
-                    Hör gärna av dig till mig om du har några frågor om mina tjänster. Om du är företagare och önskar en offert så kan du antingen specificera dina önskemål i meddelanderutan eller lämna telenummer/e-mail så hör jag av mig så fort jag kan!
-                </p>
-                <Form styles={styles} />
+                    Hör gärna av dig till mig via mail (maria@hjarnvilja.se) om du har några frågor om mina tjänster! 
+                    Om du är företagare och önskar en offert så kan du antingen specificera dina önskemål i meddelanderutan eller lämna telenummer/e-mail så hör jag av mig så fort jag kan!
+                </p> */}
+                {/* Image */}
+                <div
+                    style={{
+                        width: "100%",
+                        display: "flex",
+                        justifyContent: "center",
+                    }}
+                >
+                    <img
+                        src="/hjarnvilja/maria-gullig.jpg"
+                        alt="Brain"
+                        style={{
+                            // width: "100%",
+                            maxWidth: "400px",
+                            borderRadius: "50%",
+                            aspectRatio: "1/1",
+                            objectFit: "cover",
+                        }}
+                    />
+                </div>
+                {/* Onclick open mail */}
+                <motion.button
+                    onClick={() => window.open("mailto:maria@hjarnvilja.se")}
+                    style={{
+                        borderRadius: "5px",
+                        padding: "15px",
+                        marginBottom: "15px",
+                        marginTop: "25px",
+                            maxWidth: "500px",
+                            cursor: "pointer",
+                    }}
+                    whileHover={{ scale: 1.025 }}
+                >
+                    Kontakta mig
+                </motion.button>
+                {/* <Form styles={styles} /> */}
             </div>
         </div>
     )
